@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>PPID Surakarta</title>
+        <link rel="shortcut icon" href="asset/logo.png" type="image/png"> 
+        <base href="/">
+        <link rel="stylesheet" href="asset/css/style.css">
+        <script src="asset/js/app.js" defer></script>
+        <script>
+            window.onload = function() {
+            if (navigator.onLine) {
+                window.location.href = "page/beranda/beranda.html";
+            } else {
+                alert("Koneksi internet tidak stabil.");
+            }
+            };
+        </script>
+    </head>
+    <body>
+        <h1>Selamat datang di Halaman Utama</h1>
+        <p>Memuat halaman...</p>
+    </body>
+</html>

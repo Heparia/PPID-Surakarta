@@ -1,0 +1,87 @@
+/* import */
+@import url('https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200');
+
+/* root */
+:root {
+    /* hijau tua  */
+    --color1: #5da295; 
+    /* hijau muda */
+    --color2: #bfddd2;
+    /* abu tua */
+    --color3: #545457;
+    /* abu muda */
+    --color4: #e4e4e4;
+    /* kuning tua */
+    --color5: #d69e08;
+    /* kuning muda */
+    --color6: #f9c22e;
+
+    /* Menimpa warna di Bootstrap 5 */
+    --bs-primary: var(--color1) !important;
+    --bs-secondary: var(--color3) !important;
+    --bs-success: var(--color1) !important;
+    --bs-danger: var(--color3) !important;
+    --bs-warning: var(--color5) !important;
+    --bs-info: var(--color2) !important;
+    --bs-light: var(--color4) !important;
+    --bs-dark: var(--color3) !important;
+    --bs-border-radius: 3rem !important;
+}
+
+/* body */
+body {
+    font-family: 'Poppins', 'Quicksand';
+}
+
+/* navbar */
+.navbar {
+    border-bottom: 3px solid var(--color5);
+}
+
+.navbar-brand img {
+    height: 40px;
+}
+
+.input-group {
+    border: 2px solid var(--bs-dark);
+    border-radius: var(--bs-border-radius);
+}
+
+.input-group .form-control {
+    border: none;
+    background-color: transparent;
+}
+
+.input-group .btn {
+    color: black;
+}
+
+.input-group:focus-within {
+    box-shadow: 0 0 0 0.25rem var(--color2); 
+    border-color: var(--color1); 
+}
+
+.input-group input:focus {
+    box-shadow:none;
+}
+
+nav .btn:focus {
+    border: none;
+    background-color: var(--color1);
+    border-radius: 0;
+    /* color: white; */
+}
+
+
+.material-symbols-outlined {
+    display: flex;
+    align-items: center; 
+}
+
+datalist {
+    width: 300px;
+}
+
+/* footer */
