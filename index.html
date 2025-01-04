@@ -4,17 +4,25 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>PPID Surakarta</title>
-        <link rel="shortcut icon" href="asset/logo.png" type="image/png"> 
-        <base href="/PPID-Surakarta/">
+        <link rel="shortcut icon" href="asset/logo.png" type="image/png">
+        <script>
+            const hostname = window.location.hostname;
+            const basePath = hostname.includes("github.io") ? "/PPID-Surakarta/" : "/";
+            document.write(`<base href="${basePath}">`);
+        </script>
+
         <link rel="stylesheet" href="asset/css/style.css">
         <script src="asset/js/app.js" defer></script>
         <script>
             window.onload = function() {
-            if (navigator.onLine) {
-                window.location.href = "page/beranda/beranda.html";
-            } else {
-                alert("Koneksi internet tidak stabil.");
-            }
+                const hostname = window.location.hostname;
+                const basePath = hostname.includes("github.io") ? "/PPID-Surakarta/" : "/";
+
+                if (navigator.onLine) {
+                    window.location.href = `${basePath}page/beranda/beranda.html`;
+                } else {
+                    alert("Koneksi internet tidak stabil.");
+                }
             };
         </script>
     </head>
