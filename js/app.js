@@ -131,15 +131,16 @@
    */
   // new PureCounter();
 
-  $(document).ready(function() {
-    $('a[href]').each(function() {
-        let href = $(this).attr('href');
+$(document).ready(function() {
+    $('a[href], img[src]').each(function() {
+        let attr = $(this).is('a') ? 'href' : 'src';
+        let url = $(this).attr(attr);
         
-        // Cek apakah href mengarah ke domain github.com
-        if (href.includes('github.io')) {
+        // Cek apakah URL mengarah ke domain github.com
+        if (url.includes('github.com')) {
             // Tambahkan prefix jika belum ada
-            if (!href.startsWith('https://heparia.github.io/PPID-Surakarta/')) {
-                $(this).attr('href', 'https://heparia.github.io/PPID-Surakarta/' + href);
+            if (!url.startsWith('https://heparia.github.io/PPID-Surakarta/')) {
+                $(this).attr(attr, 'https://heparia.github.io/PPID-Surakarta/' + url);
             }
         }
     });
