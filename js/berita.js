@@ -18,7 +18,7 @@ $(document).ready(function () {
                                 <div class="ratio ratio-1x1" style="border-radius: 10px; overflow: hidden;">
                                     <img src="${item.gambar}" 
                                         class="w-100 h-100" 
-                                        onerror="this.onerror=null; this.src='/asset/berita/image-default.png';" 
+                                        onerror="this.onerror=null; this.src='asset/berita/image-default.png';" 
                                         style="object-fit: cover;">
                                 </div>
                             </div>
@@ -29,7 +29,7 @@ $(document).ready(function () {
                                     <p class="fcc-2 fst-italic m-0">${item.tanggal}</p>
                                 </div>
                                 <p class="deskripsi">${item.deskripsi}</p>
-                                <a href="/page/berita/detail-berita.html?jenis-berita=${tipe}&id=${item.no}" class="bgc-2 text-white d-flex rounded-5 p-1 justify-content-center text-decoration-none">Selengkapnya</a>
+                                <a href="page/berita/detail-berita.html?jenis-berita=${tipe}&id=${item.no}" class="bgc-2 text-white d-flex rounded-5 p-1 justify-content-center text-decoration-none">Selengkapnya</a>
                             </div>
                         </div>
                     `;
