@@ -1,0 +1,119 @@
+/* Import Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Quicksand:wght@300;500;700&display=swap');
+
+/* Gaya Umum */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+}
+
+.faq-container {
+    display: flex;
+    justify-content: start;
+    align-items: flex-start;
+    padding: 20px;
+    gap: 60px; 
+}
+
+/* Gambar FAQ */
+.faq-image {
+    text-align: left;
+    padding-left: 20px;
+}
+
+.faq-image h1 {
+    /* font-size: 32px; */
+    color: var(--color1);
+    margin-bottom: 10px;
+    text-align: center;
+    font-family: 'Poppins', 'Quicksand', sans-serif; 
+    font-weight: bold; 
+    
+}
+
+.faq-image img {
+    width: 400px; 
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+}
+
+/* Gaya untuk Konten FAQ */
+.faq-content {
+    flex: 1;
+    max-width: 800px; 
+    margin-top: 50px; 
+}
+
+.faq-item {
+    background-color: #f3f3f3;
+    border: 1px solid var(--color4);
+    margin-bottom: 10px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%; 
+}
+
+.faq-question {
+    background-color: var(--color2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 20px; 
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.faq-question span {
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    color: #f3f3f3;
+}
+
+.toggle-btn {
+    background-color: #d4d4d4;
+    color: var(--color2);
+    border: none;
+    border-radius: 50%; 
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.faq-answer {
+    display: none;
+    padding: 15px 20px; 
+    font-size: 14px;
+    background-color: var(--color4);
+    border-top: 1px solid var(--color4);
+    font-family: 'Quicksand', sans-serif; 
+}
+
+/* Responsivitas */
+@media (max-width: 768px) {
+    .faq-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .faq-image {
+        text-align: center;
+    }
+
+    .faq-content {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .faq-question {
+        font-size: 12px;
+    }
+}

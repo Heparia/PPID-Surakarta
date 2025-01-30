@@ -1,0 +1,159 @@
+.informasi-body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', 'Quicksand', sans-serif;
+    background-image: url('/asset/bgInfo2.png'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed;
+}
+
+.informasi-container {
+    padding: 20px 170px 10px;  
+    max-width: 100%;
+}
+
+.informasi-container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: var(--color1);
+    font-family: 'Poppins', 'Quicksand', sans-serif;
+}
+
+.informasi-section {
+    margin-bottom: 20px;
+}
+
+.informasi-section h2 a {
+    text-decoration: none;
+    color: white;
+    background-color: var(--color2);
+    padding: 8px 12px;
+    font-size: 20px;
+    border-radius: 15px;
+    display: inline-block;
+    font-family: 'Poppins', 'Quicksand', sans-serif;
+}
+
+.informasi-section ul {
+    list-style: none;
+    padding-left: 35px;
+    
+}
+
+.informasi-section ul li {
+    margin: 10px 0;
+    background-color: var(--color4);
+    padding: 10px;
+    border-radius: 19px;
+    width: 110%;
+}
+
+.informasi-section ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    display: block;
+    font-family: 'Poppins', 'Quicksand', sans-serif;
+}
+
+.informasi-section ul li a:hover {
+    color: inherit;
+}
+
+@media (max-width: 1024px) {
+    .informasi-body {
+        background-size: cover;
+        background-position: center center; 
+    }
+
+    .informasi-container {
+        padding: 20px 30px 10px; 
+        width: 100%; 
+    }
+
+    .informasi-container h1 {
+        font-size: 1.8em; 
+        margin-bottom: 20px;
+    }
+
+    .informasi-section h2 a {
+        font-size: 16px; 
+        padding: 8px 15px; 
+    }
+
+    .informasi-section ul li {
+        margin: 10px 0; 
+        padding: 12px;
+        font-size: 1em; 
+        border-radius: 15px;
+        width: 100%; 
+    }
+
+    .informasi-section ul li a {
+        font-size: 1em; 
+    }
+}
+
+@media (max-width: 768px) {
+    .informasi-body {
+        background-size: cover; 
+        background-position: -90px center; 
+    }
+    .informasi-container {
+        padding: 20px 20px 0px 100px; 
+    }
+    .informasi-container h1 {
+        font-size: 1.5em; 
+    }
+    .informasi-section h2 a {
+        font-size: 15px;
+        padding: 6px 10px;
+    }
+    .informasi-section ul li {
+        padding: 8px;
+        font-size: 0.9em;
+        border-radius: 10px;
+        width: 100%;
+    }
+    .informasi-section ul li a {
+        font-size: 0.9em;
+    }
+}
+
+/* Responsivitas untuk HP Kecil (Lebar <= 480px) */
+@media (max-width: 480px) {
+    .informasi-body {
+        
+        background-size: 470%; 
+        background-position: -120px top; 
+        background-attachment: scroll;
+        min-height: 100vh;
+        position: absolute;
+        width: 100%;
+    }
+    .informasi-container {
+        
+        padding: 10px 30px 0px 100px; 
+    }
+    .informasi-container h1 {
+        font-size: 1.2em; 
+    }
+    .informasi-section h2 a {
+        font-size: 14px;
+        padding: 5px 8px;
+    }
+    .informasi-section ul li {
+        padding: 5px;
+        font-size: 0.9em;
+        border-radius: 10px;
+        width: 100%;
+        
+    }
+    .informasi-section ul li a {
+        font-size: 0.9em;
+        
+    }
+}

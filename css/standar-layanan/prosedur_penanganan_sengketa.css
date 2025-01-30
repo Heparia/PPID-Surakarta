@@ -1,0 +1,152 @@
+body {
+    position: relative;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('/asset/bg-4.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.2;
+    z-index: -1;
+}
+header {
+    text-align: center;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid #d4d4d4;
+}
+
+header h1 {
+    padding-top: 2rem;
+    font-weight: bold;
+    color: var(--color1);
+    line-height: 1.5;
+}
+
+nav {
+    border: none;
+}
+
+.black-text {
+    color: black;
+}
+.blue-text{
+    color: #597095;
+}
+.image-content {
+    width: 100px;
+    height: auto;
+    object-fit: contain;
+}
+.container-fluid .col-md-4 {
+    padding: 20px;
+}
+
+.content-left {
+    padding-left: 30px;
+}
+
+.content-center {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.content-right {
+    padding-right: 30px;
+}
+
+.custom-border {
+    border-right: 2px solid #e4e4e4;
+}
+.row.gx-0 {
+    margin: 0;
+}
+
+.d-flex {
+    align-items: center;
+}
+
+.isi {
+    line-height: 1.6;
+    text-align: justify;
+    padding: 25px;
+}
+
+@media (max-width: 768px) {
+    .row.gx-0 {
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .custom-border {
+        border-right: none;
+        border-bottom: 2px solid #e4e4e4;
+    }
+
+    .content-left,
+    .content-center,
+    .content-right {
+        padding: 15px;
+    }
+
+    .image-content {
+        width: 80px;
+    }
+
+    .isi {
+        padding: 15px;
+    }
+
+    header h1 {
+        font-size: 1.7rem;
+        padding-top: 1.5rem;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .row.gx-0 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0 auto;
+        max-width: 90%;
+    }
+
+    .custom-border {
+        border-right: 2px solid #e4e4e4;
+        border-bottom: none;
+        margin-bottom: 0;
+        padding-right: 20px;
+    }
+
+    .content-left,
+    .content-center,
+    .content-right {
+        flex: 1;
+        padding: 20px;
+        text-align: justify;
+    }
+
+    .image-content {
+        width: 80px;
+        margin: 0;
+        display: inline-block;
+    }
+    header {
+        text-align: center;
+    }
+    .isi {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+    
+    header h1 {
+        font-size: 2rem;
+    }
+}

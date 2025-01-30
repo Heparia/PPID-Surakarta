@@ -1,0 +1,231 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', 'Quicksand', sans-serif;
+    background-color: #f8f8f8;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.kontak-container {
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+    flex-grow: 1;
+}
+
+.kontak-judul {
+    color: var(--color1);
+    margin-bottom: 30px;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Poppins', 'Quicksand', sans-serif;
+}
+
+.kontak-contact-container {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    gap: 20px;
+    width: 100%;
+}
+
+.kontak-left-column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.kontak-map {
+    width: 100%;
+    height: 400px;
+    background-color: var(--color2);
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.kontak-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 20px;
+    align-items: start; 
+}
+.kontak-info-left i,
+.kontak-info-right i {
+    color: var(--color2);
+}
+
+.kontak-info-left ul,
+.kontak-info-right ul {
+    margin: 0;
+    padding: 0;
+    list-style: none; 
+}
+
+.kontak-info-left li,
+.kontak-info-right li {
+    margin-bottom: 10px;
+}
+
+/* Styling untuk form kontak */
+.kontak-form-container {
+    display: flex;
+    flex-direction: column; 
+    padding-bottom: 0; 
+    min-height: auto; 
+}
+
+.kontak-form-container form {
+    display: flex;
+    flex-direction: column; 
+    flex-grow: 1; 
+}
+
+.kontak-form-container input,
+.kontak-form-container textarea {
+    margin-bottom: 10px; 
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%; 
+    box-sizing: border-box; 
+}
+
+.kontak-form-container textarea {
+    height: 150px; 
+    resize: vertical; 
+}
+
+.kontak-form-container button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: var(--color2); 
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    align-self: flex-end; 
+    margin-top: 0; 
+    transition: background-color 0.3s ease;
+}
+
+.kontak-form-container button:hover {
+    background-color: var(--color2); 
+}
+
+.kontak-follow-section {
+    width: 100%;
+    margin-top: 5px;
+    
+}
+
+.kontak-social-icons {
+    display: flex;
+    gap: 15px;
+    margin-top: 5px;
+}
+
+.kontak-social-icons i {
+    font-size: 24px;
+    color: var(--color2);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.kontak-social-icons i:hover {
+    transform: scale(1.2);
+}
+
+
+
+/* Responsif */
+@media (max-width: 768px) {
+    .kontak-footer {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .kontak-footer-left ul li {
+        justify-content: center;
+    }
+}
+
+.kontak-form-container {
+    background-image: url('/asset/bgkontak.png');
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding-bottom: 15px; 
+}
+
+.kontak-form-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.kontak-form-container label {
+    text-align: left;
+    color: #000000; 
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.kontak-form-container input, .kontak-form-container textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid var(--color2);
+    border-radius: 15px;
+    font-size: 14px;
+}
+
+.kontak-form-container button {
+    background-color: var(--color2);
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px; 
+}
+
+.kontak-form-container button:hover {
+    background-color: var(--color2);
+}
+
+/* Responsif */
+@media (max-width: 1024px) {
+    .kontak-container {
+        padding: 20px;
+    }
+
+    .kontak-contact-container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .kontak-map {
+        height: 300px;
+    }
+}
+
+@media (max-width: 768px) {
+    .kontak-judul {
+        font-size: 28px;
+    }
+
+    .kontak-info ul li {
+        font-size: 14px;
+    }
+
+    .kontak-form-container button {
+        font-size: 14px;
+    }
+}

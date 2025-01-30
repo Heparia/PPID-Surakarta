@@ -1,0 +1,905 @@
+/* import */
+@import url('https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+@import url('/css/main.css');
+
+/* root */
+:root {
+    /* hijau tua  */
+    --color1: #19304b;
+    /* hijau muda */
+    --color2: #234265;
+    /* abu tua */
+    --color3: #585858;
+    /* abu muda */
+    --color4: #d2d2d2;
+    /* kuning tua */
+    --color5: #efd096;
+    /* kuning muda */
+    --color6: #f9c22e;
+
+    /* Menimpa warna di Bootstrap 5 */
+    --bs-primary: var(--color1) !important;
+    --bs-secondary: var(--color3) !important;
+    --bs-success: var(--color1) !important;
+    --bs-danger: var(--color3) !important;
+    --bs-warning: var(--color5) !important;
+    --bs-info: var(--color2) !important;
+    --bs-light: var(--color4) !important;
+    --bs-dark: var(--color3) !important;
+    --bs-border-radius: 3rem;
+    --bs-primary-rgb: 25, 48, 75;
+    --bs-border-color: var(--color1);
+}
+
+.light-background {
+  --background-color: #f2f9f9;
+  --surface-color: #ffffff;
+}
+
+.dark-background {
+  --background-color: #060606;
+  --default-color: #ffffff;
+  --heading-color: #ffffff;
+  --surface-color: #252525;
+  --contrast-color: #ffffff;
+}
+
+.accent-background {
+  --background-color: #5da295;
+  --default-color: #ffffff;
+  --heading-color: #ffffff;
+  --accent-color: #ffffff;
+  --surface-color: #00b6a1;
+  --contrast-color: #ffffff;
+}
+
+/* Smooth scroll */
+:root {
+  scroll-behavior: smooth;
+}
+/*--------------------------------------------------------------
+# Global Sections
+--------------------------------------------------------------*/
+section,
+.section {
+  color: var(--default-color);
+  background-color: var(--background-color);
+  padding: 60px 0;
+  scroll-margin-top: 112px;
+  overflow: clip;
+}
+
+@media (max-width: 1199px) {
+
+  section,
+  .section {
+    scroll-margin-top: 100px;
+  }
+}
+
+/*--------------------------------------------------------------
+# Global Section Titles
+--------------------------------------------------------------*/
+.section-title {
+  text-align: center;
+  padding-bottom: 30px;
+  position: relative;
+}
+
+.section-title h2 {
+  /* font-size: 32px; */
+  font-weight: 700;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  color: var(--color1);
+}
+
+.section-title h2:after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: var(--accent-color);
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.section-title p {
+  margin-bottom: 0;
+}
+/*--------------------------------------------------------------
+# visiMisi Section
+--------------------------------------------------------------*/
+#visiMisi {
+  width: 100%; 
+  margin: 0; 
+  padding: 0; 
+  background-image: url('/asset/bg.png'); 
+  background-position: right; 
+  background-size: cover; 
+  background-repeat: repeat-x; 
+  
+}
+.service-item {
+  max-height: 500px;      
+  overflow-y: scroll;     
+  padding-right: 10px;     
+}
+
+#visiMisi .container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100%; 
+  max-width: 100%; 
+  margin: 0 auto; 
+  padding: 0; 
+}
+
+
+#visiMisi .row {
+  display: flex; 
+  justify-content: space-between; 
+  align-items: flex-start;
+  flex-grow: 1;
+  margin: 0;
+  padding: 0 50px; 
+  width: 100%; 
+  box-sizing: border-box; 
+  
+}
+
+#visiMisi .col-lg-4, #visiMisi .col-md-6 {
+  flex: 1; 
+  max-width: 100%; 
+  padding: 10px; 
+}
+
+#visiMisi .service-item {
+  background-color: var(--surface-color);
+  box-shadow: 0px 0 30px rgba(0, 0, 0, 0.1);
+  height: 100%;
+  padding: 60px 30px;
+  text-align: center;
+  transition: 0.3s;
+  border-radius: 20px;
+  width: 100%; 
+  box-sizing: border-box; 
+}
+
+#visiMisi .service-item h3 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+#visiMisi .service-item.item-cyan {
+  border-bottom: 3px solid #314a71;
+}
+
+#visiMisi .service-item.item-cyan .icon {
+  color: #314a71;
+  background: rgba(13, 202, 240, 0.1);
+}
+
+#visiMisi .service-item.item-cyan .read-more {
+  color: #314a71;
+}
+
+#visiMisi .service-item.item-cyan:hover {
+  background: #314a71;
+}
+
+#visiMisi .service-item.item-orange {
+  border-bottom: 3px solid#314a71;
+}
+
+#visiMisi .service-item.item-orange .icon {
+  color: #314a71;
+  background: rgba(253, 126, 20, 0.1);
+}
+
+#visiMisi .service-item.item-orange .read-more {
+  color: #314a71;
+}
+
+#visiMisi .service-item.item-orange:hover {
+  background: #314a71;
+}
+
+#visiMisi .service-item:hover h3,
+#visiMisi .service-item:hover p,
+#visiMisi .service-item:hover .read-more {
+  color: #fff;
+}
+
+#visiMisi .service-item:hover .icon {
+  background: #fff;
+}
+
+
+/*--------------------------------------------------------------
+# Welcome Section
+--------------------------------------------------------------*/
+.welcome {
+  width: 100%;
+  position: relative;
+  padding: 140px 0 0 0;
+  background-color: var(--color1);
+}
+
+.welcome img {
+  width: 150%;
+  height: auto;
+  max-width: none;
+  padding: 0;
+  object-fit: cover;
+  margin-left: -10%;
+}
+
+.welcome .container {
+  position: relative;
+  z-index: 3;
+}
+
+.welcome h2 {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: var(--color6);
+}
+
+.welcome h2 .accent {
+  color: var(--color6);
+}
+
+.welcome p {
+  color: color-mix(in srgb, var(--color4), transparent 40%);
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+.welcome .icon-boxes {
+  padding-bottom: 60px;
+  z-index: 2;
+  border-radius: 6%;
+}
+
+@media (min-width: 1200px) {
+  .welcome .icon-boxes:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: calc(50% + 20px);
+    background-color: var(--default-color);
+    border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+  }
+}
+
+.welcome .icon-box {
+  padding: 60px 30px;
+  position: relative;
+  overflow: hidden;
+  background: var(--color1);
+  box-shadow: 0 0 29px 0 rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+  border-radius: px;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+
+.welcome .icon-box .title {
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 24px;
+}
+
+.welcome .icon-box .title a {
+  color: color-mix(in srgb, var(--color6), transparent 10%);
+  transition: 0.3s;
+}
+
+.welcome .icon-box .icon {
+  margin-bottom: 20px;
+  padding-top: 10px;
+  display: inline-block;
+  transition: all 0.3s ease-in-out;
+  font-size: 48px;
+  line-height: 1;
+  color: color-mix(in srgb, var(--default-color), transparent 20%);
+}
+
+.welcome .icon-box:hover {
+  background-color: color-mix(in srgb, var(--color5), white 2%);
+}
+
+.welcome .icon-box:hover .title a,
+.welcome .icon-box:hover .icon {
+  color: var(--contrast-color);
+}
+
+/*--------------------------------------------------------------
+# About Section
+--------------------------------------------------------------*/
+
+
+.about h3 {
+  font-weight: 500;
+  font-size: 28px;
+  margin-bottom: 20px;
+  padding: auto;
+  display: flex;
+  justify-content: center;  
+  align-items: center;     
+  text-align: center;  
+
+}
+.about h3 p{
+  text-align: justify;
+}
+
+.about .fst-italic {
+  color: color-mix(in srgb, var(--default-color), var(--contrast-color) 50%);
+}
+.col-lg-6 p {
+  text-align: justify; 
+  margin-bottom: 20px;  
+}
+
+
+
+.about .content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.about .content ul li {
+  padding: 0 0 10px 30px;
+  position: relative;
+}
+
+.about .content ul i {
+  position: absolute;
+  font-size: 20px;
+  left: 0;
+  top: -3px;
+   color: var(--color1);
+}
+.about .content p {
+  text-align: justify; 
+}
+.about .content p:last-child {
+  margin-bottom: 0;
+  text-align: justify;
+}
+
+.about .pulsating-play-btn {
+  position: absolute;
+  left: calc(50% - 47px);
+  top: calc(50% - 47px);
+}
+
+
+.about .col-lg-6 img {
+  width: 100%; 
+  height: auto; 
+  border-radius: 20px; 
+  margin-bottom: 20px; 
+}
+
+
+/*--------------------------------------------------------------
+# Call To Action Section
+--------------------------------------------------------------*/
+.call-to-action {
+  background-color: transparent;
+}
+
+.call-to-action .container {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  border-radius: 15px;
+  overflow: hidden;
+  position: relative;
+  clip-path: inset(0 round 15px);
+}
+
+.call-to-action .container img {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.call-to-action .container:before {
+  content: "";
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+}
+
+.call-to-action .container .content {
+  position: relative;
+  z-index: 3;
+}
+
+.call-to-action h3 {
+  color: var(--default-color);
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.call-to-action p {
+  color: var(--default-color);
+  margin-bottom: 20px;
+}
+
+.call-to-action .play-btn {
+  width: 94px;
+  height: 94px;
+  margin-bottom: 20px;
+  background: radial-gradient(var(--accent-color) 50%, color-mix(in srgb, var(--accent-color), transparent 60%) 52%);
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+}
+
+.call-to-action .play-btn:before {
+  content: "";
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  animation-delay: 0s;
+  animation: pulsate-btn 2s;
+  animation-direction: forwards;
+  animation-iteration-count: infinite;
+  animation-timing-function: steps;
+  opacity: 1;
+  border-radius: 50%;
+  border: 5px solid color-mix(in srgb, var(--accent-color), transparent 20%);
+  top: -15%;
+  left: -15%;
+  background: rgba(198, 16, 0, 0);
+}
+
+.call-to-action .play-btn:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-40%) translateY(-50%);
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 15px solid var(--default-color);
+  z-index: 100;
+  transition: all 400ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+.call-to-action .play-btn:hover:before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-40%) translateY(-50%);
+  width: 0;
+  height: 0;
+  border: none;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 15px solid var(--default-color);
+  z-index: 200;
+  animation: none;
+  border-radius: 0;
+}
+
+.call-to-action .play-btn:hover:after {
+  border-left: 15px solid var(--accent-color);
+  transform: scale(20);
+}
+
+.call-to-action .cta-btn {
+  font-family: var(--heading-font);
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 12px 40px;
+  border-radius: 5px;
+  transition: 0.5s;
+  margin: 10px;
+  border: 2px solid var(--contrast-color);
+  color: var(--contrast-color);
+}
+
+.call-to-action .cta-btn:hover {
+  background: var(--accent-color);
+  border: 2px solid var(--accent-color);
+}
+
+@keyframes pulsate-btn {
+  0% {
+    transform: scale(0.6, 0.6);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(1, 1);
+    opacity: 0;
+  }
+}
+
+/*--------------------------------------------------------------
+# Clients (organisasi perangkat daerah)Section
+--------------------------------------------------------------*/
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300vh;
+  padding: 0 20px;
+}
+
+.pdf-container {
+  width: 80%;
+  height: 80vh;
+  border: none;
+}
+
+.right-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.clients .swiper {
+  padding: 100px 0;
+}
+
+.clients .swiper-wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.clients .swiper-slide {
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.clients .swiper-slide img {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  transition: 0.1s;
+}
+
+.clients .swiper-slide img:hover {
+  transform: scale(1.1);
+}
+
+.swiper-pagination {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+}
+
+.swiper-pagination-bullet {
+  background-color: var(--color5);
+}
+
+/* Struktur Organisasi Section */
+#struktur {
+  background-color: #f7f9f9; 
+}
+
+#struktur .section-title {
+  font-size: 32px;
+  font-weight: 700;
+  color:var(--color1); 
+ 
+  margin-bottom: 20px;
+}
+
+#struktur .struktur-diagram {
+  max-width: 100%; 
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+#struktur .struktur-description {
+  font-size: 16px;
+  line-height: 1.8; 
+  color: #333; 
+  text-align: justify;
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  #struktur .section-title {
+    font-size: 28px;
+  }
+
+  #struktur .struktur-description {
+    font-size: 14px;
+  }
+}
+/* Struktur Organisasi Section */
+#struktur {
+  background-color: #f7f9f9; 
+  padding-left: 20px; 
+  padding-right: 20px; 
+}
+
+#struktur .struktur-diagram {
+  max-width: 100%; 
+  border-radius: 8px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#struktur .struktur-description {
+  font-size: 16px;
+ 
+}
+
+/*--------------------------------------------------------------
+# Alt Features Section
+--------------------------------------------------------------*/
+.alt-features .icon-box {
+  display: flex;
+}
+
+.alt-features .icon-box h4 {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0 0 10px 0;
+}
+
+.alt-features .icon-box i {
+  font-size: 44px;
+  line-height: 44px;
+  color: var(--color1);
+  margin-right: 15px;
+}
+
+.alt-features .icon-box p {
+  font-size: 15px;
+  color: color-mix(in srgb, var(--default-color), transparent 30%);
+  margin-bottom: 0;
+}
+
+/*--------------------------------------------------------------
+# page Section
+--------------------------------------------------------------*/
+/* Gaya untuk judul halaman */
+#page-title {
+    color: #f39c12;
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Poppins', 'Quicksand', sans-serif;
+}
+
+/* Responsivitas */
+@media (max-width: 768px) {
+    .dataTables_wrapper .row {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .dataTables_wrapper .dataTables_length,
+    .dataTables_wrapper .dataTables_filter,
+    .dataTables_wrapper .dataTables_info,
+    .dataTables_wrapper .dataTables_paginate {
+        text-align: left;
+        width: 100%;
+    }
+
+    .dataTables_wrapper .dataTables_length {
+        margin-bottom: 10px;
+    }
+
+    table.dataTable {
+        text-align: left;
+        width: 100%;
+    }
+}
+
+/* Gaya untuk tabel */
+table {
+    background-color: white;
+    border-collapse: collapse;
+}
+
+table thead {
+    background-color:var(--color1);
+    color: white;
+}
+
+table th, table td {
+    padding: 10px;
+    border: 1px solid #bfddd2;
+}
+
+table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+
+/*--------------------------------------------------------------
+# Services Section
+--------------------------------------------------------------*/
+.services .service-item {
+  background-color: var(--surface-color);
+  padding: 40px;
+  box-shadow: 0px 0 30px rgba(0, 0, 0, 0.1);
+  height: 100%;
+}
+
+.services .service-item .icon {
+  width: 100px;  
+  height: 100px;
+  position: relative;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.services .service-item .icon img {
+  width: 100%; 
+  height: 100%; 
+  object-fit: contain; 
+  transition: transform 0.3s ease-in-out;
+  z-index: 2; 
+}
+
+.services .service-item .icon:before {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  background: color-mix(in srgb, var(--heading-color), transparent 95%);
+  border-radius: 50px;
+  z-index: 1;
+  top: 10px;
+  right: -20px;
+  transition: 0.3s;
+}
+
+.services .service-item h3 {
+  color: color-mix(in srgb, var(--heading-color), transparent 20%);
+  font-weight: 700;
+  margin: 0 0 20px 0;
+  padding-bottom: 8px;
+  font-size: 22px;
+  position: relative;
+  display: inline-block;
+  border-bottom: 4px solid color-mix(in srgb, var(--color5), transparent 90%);
+  transition: 0.3s;
+}
+
+.services .service-item p {
+  line-height: 24px;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+.services .service-item .readmore {
+  margin-top: 15px;
+  display: inline-block;
+  color: color-mix(in srgb, var(--color1), transparent 30%);
+}
+
+.services .service-item:hover .icon img {
+  transform: scale(2);
+}
+
+.services .service-item:hover .icon:before {
+  background: color-mix(in srgb, var(--accent-color), transparent 50%);
+}
+
+.services .service-item:hover h3 {
+  border-color: color-mix(in srgb, var(--accent-color), transparent 10%);
+  color: var(--heading-color);
+}
+
+.services .service-item:hover .readmore {
+  color: var(--accent-color);
+}
+
+
+/*--------------------------------------------------------------
+# daftar perangkat Section
+--------------------------------------------------------------*/
+
+/* Gaya untuk judul halaman */
+#page-title {
+    color: var(--color2);
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px 0;
+    background-color: transparent;
+}
+
+/* Responsivitas */
+@media (max-width: 768px) {
+    .dataTables_wrapper .row {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .dataTables_wrapper .dataTables_length,
+    .dataTables_wrapper .dataTables_filter,
+    .dataTables_wrapper .dataTables_info,
+    .dataTables_wrapper .dataTables_paginate {
+        text-align: left;
+        width: 100%;
+    }
+
+    .dataTables_wrapper .dataTables_length {
+        margin-bottom: 10px;
+    }
+
+    table.dataTable {
+        text-align: left;
+        width: 100%;
+    }
+}
+
+/* Gaya untuk tabel */
+table {
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparan */
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table thead {
+    background-color: var(--color2);
+    color: white;
+}
+
+table th, table td {
+    padding: 10px;
+    border: 1px solid #d2d2d2;
+}
+
+table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+#info-table_wrapper .dt-row {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch; 
+}
+
+
+

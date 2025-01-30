@@ -4,23 +4,324 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>PPID Surakarta</title>
-        <link rel="shortcut icon" href="asset/logo.png" type="image/png"> 
-        <link rel="stylesheet" href="css/style.css">
-        
+        <link rel="shortcut icon" href="/asset/logo.png" type="image/png"> 
+        <link rel="stylesheet" href="/css/style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.16.0/themes/prism.min.css">
+
+        <!-- bisa tambah stylesheet baru disini -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+        <link rel="stylesheet" href="/css/beranda.css">
     </head>
     <body>
-        <nav id="navbar-placeholder"></nav>
-        <h1>Beranda</h1>
-        <header>
-            <img src="asset/Beranda.png" alt="" style="max-width: 100%;">
-        </header>
+        <nav id="navbar-placeholder" class="menucustom-1"></nav>
+        <div id="search-modal-placeholder"></div>
+        
+        <!-- edit konten mulai dari disini -->
+        <main>
+            <section class="py-0" data-aos="fade-down" data-aos-delay="100">
+                <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="/asset/bg-2.png" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-flex justify-content-start align-items-center h-100">
+                                <div class="container">
+                                    <div class="row justify-content-center">
+                                        <div class="col-12 text-black text-start text-white">
+                                            <h1 class="fw-bold fs-custom-title fcc-4"><span class="fcc-5">PPID</span> PEMERINTAH <span class="fcc-5">KOTA</span> SURAKARTA</h1>
+                                            <p class="lead">Transparansi Informasi untuk Pelayanan Publik yang Lebih Baik</p>
+                                            <div class="container p-0">
+                                                <div class="row">
+                                                    <div class="col-12 col-md-2">
+                                                        <p>Jam Pelayanan</p>
+                                                    </div>
+                                                    <div class="col-12 col-md-10">
+                                                        <p>: Pukul 08.30 - 14.30 WIB (Senin s/d Jumat)</p>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12 col-md-2">
+                                                        <p>Tempat Pelayanan</p>
+                                                    </div>
+                                                    <div class="col-12 col-md-10">
+                                                        <p>: Jl. Jend. Sudirman No.2, Kp. Baru, Kec. Ps. Kliwon, Kota Surakarta, Jawa Tengah 57133</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                          
+                        <div class="carousel-item">
+                            <img src="/asset/bg-2.png" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-flex justify-content-start align-items-center h-100">
+                                <div class="container">
+                                    <div class="row justify-content-center">
+                                        <div class="col-12 text-black text-start text-white">
+                                            <h1 class="fw-bold fs-custom-title fcc-4"><span class="fcc-5">PPID</span> PEMERINTAH <span class="fcc-5">KOTA</span> SURAKARTA</h1>
+                                            <p class="lead">Transparansi Informasi untuk Pelayanan Publik yang Lebih Baik</p>                                         
+                                            <div class="container p-0">
+                                                <div class="row">
+                                                    <div class="col-12 col-md-2">
+                                                        <p>Jam Pelayanan</p>
+                                                    </div>
+                                                    <div class="col-12 col-md-10">
+                                                        <p>: Pukul 08.30 - 14.30 WIB (Senin s/d Jumat)</p>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12 col-md-2">
+                                                        <p>Tempat Pelayanan</p>
+                                                    </div>
+                                                    <div class="col-12 col-md-10">
+                                                        <p>: Jl. Jend. Sudirman No.2, Kp. Baru, Kec. Ps. Kliwon, Kota Surakarta, Jawa Tengah 57133</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="carousel-item">
+                            <img src="/asset/bg-2.png" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-flex justify-content-start align-items-center h-100">
+                                <div class="container">
+                                    <div class="row justify-content-center">
+                                        <div class="col-12 text-black text-start text-white">
+                                            <h1 class="fw-bold fs-custom-title fcc-4"><span class="fcc-5">PPID</span> PEMERINTAH <span class="fcc-5">KOTA</span> SURAKARTA</h1>
+                                            <p class="lead">Transparansi Informasi untuk Pelayanan Publik yang Lebih Baik</p>
+                                            <div class="container p-0">
+                                                <div class="row">
+                                                    <div class="col-12 col-md-2">
+                                                        <p>Jam Pelayanan</p>
+                                                    </div>
+                                                    <div class="col-12 col-md-10">
+                                                        <p>: Pukul 08.30 - 14.30 WIB (Senin s/d Jumat)</p>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12 col-md-2">
+                                                        <p>Tempat Pelayanan</p>
+                                                    </div>
+                                                    <div class="col-12 col-md-10">
+                                                        <p>: Jl. Jend. Sudirman No.2, Kp. Baru, Kec. Ps. Kliwon, Kota Surakarta, Jawa Tengah 57133</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </section>
+            <section class="d-flex justify-content-center p-5 button-beranda bg-batik-color4-op20 mb-5" data-aos="fade-up" data-aos-delay="200">
+                <div class="container text-center m-5">
+                    <div class="row hover-custom-1">
+                        <a href="/page/beranda/form-permohonan.html" data-aos="zoom-in-up" data-aos-delay="50" class="text-decoration-none text-black col-12 col-md-3 d-flex flex-column justify-content-center align-items-center text-center bgc-4 p-5">
+                            <p><span class="material-symbols-outlined fs-1 fcc-1">contract_edit</span></p>
+                            <p>Form Permohonan Informasi Publik</p>
+                        </a>
+                        <a href="/page/beranda/cek-permohonan.html" data-aos="zoom-in-up" data-aos-delay="50" class="text-decoration-none text-black col-12 col-md-3 d-flex flex-column justify-content-center align-items-center text-center bgc-2 p-5 text-white">
+                            <p><span class="material-symbols-outlined fs-1">quick_reference_all</span></p>
+                            <p>Cek Status Permohonan Informasi Publik</p>
+                        </a>
+                        <a href="/page/beranda/form-keberatan.html" data-aos="zoom-in-up" data-aos-delay="50" class="text-decoration-none text-black col-12 col-md-3 d-flex flex-column justify-content-center align-items-center text-center bgc-4 p-5">
+                            <p><span class="material-symbols-outlined fs-1 fcc-1">contract_edit</span></p>
+                            <p>Form Pengajuan Keberatan</p>
+                        </a>
+                        <a href="/page/beranda/cek-keberatan.html" data-aos="zoom-in-up" data-aos-delay="50" class="text-decoration-none text-black col-12 col-md-3 d-flex flex-column justify-content-center align-items-center text-center bgc-2 p-5 text-white">
+                            <p><span class="material-symbols-outlined fs-1">quick_reference_all</span></p>
+                            <p>Cek Status Pengajuan Keberatan</p>
+                        </a>
+                    </div>
+                    <div class="row d-flex flex-md-row-reverse hover-custom-1">
+                        <a href="https://solodata.surakarta.go.id/" data-aos="zoom-in-up" data-aos-delay="50" class="text-decoration-none text-black col-12 col-md-3 d-flex flex-column justify-content-center align-items-center text-center bgc-4 p-5">
+                            <p><span class="material-symbols-outlined fs-1 fcc-3">database</span></p>
+                            <p>Satu Data Kota Surakarta</p>
+                        </a>
+                        <a href="#" data-aos="zoom-in-up" data-aos-delay="50" class="text-decoration-none text-black col-12 col-md-3 d-flex flex-column justify-content-center align-items-center text-center bgc-2 p-5 text-white">
+                            <p><span class="material-symbols-outlined fs-1">bar_chart</span></p>
+                            <p>Statistik Layanan</p>
+                        </a>
+                        <a href="#" data-aos="zoom-in-up" data-aos-delay="50" class="text-decoration-none text-black col-12 col-md-3 d-flex flex-column justify-content-center align-items-center text-center bgc-4 p-5">
+                            <p><span class="material-symbols-outlined fs-1 fcc-3">list</span></p>
+                            <p>Daftar Informasi Publik PPID Perangkat Daerah</p>
+                        </a>
+                        <a href="https://ulas.surakarta.go.id/" data-aos="zoom-in-up" data-aos-delay="50" class="text-decoration-none text-black col-12 col-md-3 d-flex flex-column justify-content-center align-items-center text-center bgc-2 p-5 text-white">
+                            <p><span class="material-symbols-outlined fs-1">communication</span></p>
+                            <p>Kanal Pengaduan Resmi</p>
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <article class="container px-5 mb-5">
+                <section class="title-custom-panah d-flex flex-column flex-md-row align-items-center align-items-md-start" data-aos="fade-left">
+                    <h1 class="my-auto fw-bold fs-custom-title me-0 me-md-4 text-center text-md-start"><span class="fcc-5">SIARAN</span> PERS KOTA <span class="fcc-5">SURAKARTA</span></h1>
+                    <img src="/asset/panah-color5.png" class="img-fluid flip-horizontal flip-horizontal-md" style="width: 20vw;">
+                </section>
+                <section class="container">
+                    <div class="row my-4" id="berita-pers-container">
+                        <div class="col-12 mt-0 mt-md-4" data-aos="zoom-in-up">
+                            <a href="https://diskominfosp.surakarta.go.id/" class="card p-2 rounded-custom shadow-sm bgc-3 border-none text-white text-center hover-custom-2 text-decoration-none">
+                                <p class="border-none my-auto fw-bold">LIHAT SIARAN PERS KOTA SURAKARTA LAINNYA</p>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+            </article>
+            <article class="w-100 mb-5">
+                <div class="container px-5" >
+                    <section class="title-custom-panah d-flex flex-column-reverse flex-md-row align-items-center align-items-md-end justify-content-md-end" data-aos="fade-right">
+                        <img src="/asset/panah-color5.png" class="img-fluid flip-horizontal-2 flip-horizontal-2-md me-0 me-md-4" style="width: 20vw;">
+                        <h1 class="my-auto fw-bold fs-custom-title text-center text-md-end"><span class="fcc-5">BERITA</span> TERBARU KOTA <span class="fcc-5">SURAKARTA</span></h1>
+                    </section>
+                    <section class="container">
+                        <div class="row my-4" id="berita-terbaru-container">
+                            <div class="col-12 mt-0 mt-md-4" data-aos="zoom-in-up">
+                                <a href="https://diskominfosp.surakarta.go.id/" class="card p-2 rounded-custom shadow-sm bgc-3 border-none text-white text-center hover-custom-2 text-decoration-none">
+                                    <p class="border-none my-auto fw-bold">LIHAT BERITA KOTA SURAKARTA LAINNYA</p>
+                                </a>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </article>
+            <article class="container px-5">
+                <section class="title-custom-panah d-flex flex-column flex-md-row align-items-center align-items-md-start mb-5" data-aos="fade-left" data-aos-delay="100">
+                    <h1 class="my-auto fw-bold fs-custom-title me-0 me-md-4 text-center text-md-start"><span class="fcc-5">GALERI</span> FOTO & VIDEO</h1>
+                    <img src="/asset/panah-color5.png" class="img-fluid flip-horizontal flip-horizontal-md" style="width: 20vw;">
+                </section>
+                <section class="row align-items-stretch">
+                    <div class="col-12 col-md-6 vh-25">
+                        <div class="d-flex flex-row gap-3 h-75">
+                            <a href="#" class="ratio ratio-1x1" data-aos="flip-left" data-aos-delay="200">
+                                <img src="/asset/banner-1.png" alt="" class="img-fluid rounded-custom">
+                            </a>
+                            <a href="#" class="ratio ratio-1x1" data-aos="flip-right" data-aos-delay="300">
+                                <img src="/asset/banner-1.png" alt="" class="img-fluid rounded-custom">
+                            </a>
+                        </div>
+                        <a href="/page/galeri/gambar.html" data-aos="zoom-in-up" data-aos-delay="100" class="bgc-1 text-decoration-none text-white rounded-2 text-center d-flex justify-content-center py-2 my-4">Selengkapnya</a>
+                    </div>
+                    
+                    <div class="col-12 col-md-5 vh-25 my-3 my-md-0">
+                        <div class="ratio ratio-16x9 h-75" data-aos="flip-up" data-aos-delay="400">
+                            <iframe 
+                                src="https://www.youtube.com/embed/HcsIjHJQRV4?si=mS9_kpBJE-T3qlZA" 
+                                title="YouTube video player" 
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                referrerpolicy="strict-origin-when-cross-origin" 
+                                class="rounded-custom"
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                        <a href="/page/galeri/video.html" data-aos="zoom-in-up" data-aos-delay="100" class="bgc-1 text-decoration-none text-white rounded-2 text-center d-flex justify-content-center py-2 my-4">Selengkapnya</a>
+                    </div>
+                </section>
+            </article>
+            <article class="w-100 my-5 bg-batik-color4-op20" id="penghargaan" data-aos="fade-up" data-aos-delay="100">
+                <div class="container-fluid py-3" >
+                    <section class="title-custom-panah d-flex flex-column-reverse flex-md-row align-items-center justify-content-md-center" data-aos="fade-up" data-aos-delay="200">
+                        <img src="/asset/panah-color5.png" class="img-fluid flip-horizontal flip-horizontal-md" style="width: 20vw;">
+                        <div class="d-flex flex-column justify-content-center align-items-center mx-5">
+                            <h1 class="my-auto fw-bold fs-custom-title text-center text-md-end fcc-5">PENGHARGAAN</h1>
+                            <h2>KOTA SURAKARTA</h2>
+                        </div>
+                        <img src="/asset/panah-color5.png" class="img-fluid flip-horizontal-2 flip-horizontal-2-md me-0 me-md-4" style="width: 20vw;">
+                    </section>
+                    <div class="container my-5">
+                        <div class="d-flex justify-content-between" data-aos="fade-up" data-aos-delay="250">
+                          <button id="prevBtn" class="btn btn-primary">Prev</button>
+                          <button id="nextBtn" class="btn btn-primary">Next</button>
+                        </div>
+                        <div class="card-deck-wrapper mt-4">
+                            <div data-aos="fade-up" data-aos-delay="300" class="card-p d-flex flex-column align-items-center justify-content-center border border-2 border-warning p-3 gap-3">
+                                <img src="/asset/lencana-2.png" class="img-fluid" alt="Image 1">
+                                <div class="d-flex flex-column align-items-center justify-content-center text-center">
+                                    <h5 class="fcc-5 fw-bold text-center">PENGHARGAAN KETERBUKAAN INFORMASI</h5>
+                                    <p class="m-0">Tingkat Provinsi Jawa Tengah Tahun 2024</p>
+                                </div>
+                            </div>
+                            <div data-aos="fade-up" data-aos-delay="350" class="card-p d-flex flex-column align-items-center justify-content-center border border-2 border-warning p-3 gap-3">
+                                <img src="/asset/lencana-2.png" class="img-fluid" alt="Image 1">
+                                <div class="d-flex flex-column align-items-center justify-content-center text-center">
+                                    <h5 class="fcc-5 fw-bold text-center">PENGHARGAAN KETERBUKAAN INFORMASI</h5>
+                                    <p class="m-0">Tingkat Provinsi Jawa Tengah Tahun 2024</p>
+                                </div>
+                            </div>
+                            <div data-aos="fade-up" data-aos-delay="400" class="card-p d-flex flex-column align-items-center justify-content-center border border-2 border-warning p-3 gap-3">
+                                <img src="/asset/lencana-2.png" class="img-fluid" alt="Image 1">
+                                <div class="d-flex flex-column align-items-center justify-content-center text-center">
+                                    <h5 class="fcc-5 fw-bold text-center">PENGHARGAAN KETERBUKAAN INFORMASI</h5>
+                                    <p class="m-0">Tingkat Provinsi Jawa Tengah Tahun 2024</p>
+                                </div>
+                            </div>
+                            <div data-aos="fade-up" data-aos-delay="450" class="card-p d-flex flex-column align-items-center justify-content-center border border-2 border-warning p-3 gap-3">
+                                <img src="/asset/lencana-2.png" class="img-fluid" alt="Image 1">
+                                <div class="d-flex flex-column align-items-center justify-content-center text-center">
+                                    <h5 class="fcc-5 fw-bold text-center">PENGHARGAAN KETERBUKAAN INFORMASI</h5>
+                                    <p class="m-0">Tingkat Provinsi Jawa Tengah Tahun 2024</p>
+                                </div>
+                            </div>
+                            <div data-aos="fade-up" data-aos-delay="500" class="card-p d-flex flex-column align-items-center justify-content-center border border-2 border-warning p-3 gap-3">
+                                <img src="/asset/lencana-2.png" class="img-fluid" alt="Image 1">
+                                <div class="d-flex flex-column align-items-center justify-content-center text-center">
+                                    <h5 class="fcc-5 fw-bold text-center">PENGHARGAAN KETERBUKAAN INFORMASI</h5>
+                                    <p class="m-0">Tingkat Provinsi Jawa Tengah Tahun 2024</p>
+                                </div>
+                            </div>
+                            <div data-aos="fade-up" data-aos-delay="550" class="card-p d-flex flex-column align-items-center justify-content-center border border-2 border-warning p-3 gap-3">
+                                <img src="/asset/lencana-2.png" class="img-fluid" alt="Image 1">
+                                <div class="d-flex flex-column align-items-center justify-content-center text-center">
+                                    <h5 class="fcc-5 fw-bold text-center">PENGHARGAAN KETERBUKAAN INFORMASI</h5>
+                                    <p class="m-0">Tingkat Provinsi Jawa Tengah Tahun 2024</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="container px-5 mb-5">
+                <section class="title-custom-panah d-flex flex-column flex-md-row align-items-center align-items-md-start mt-5 mb-4" data-aos="fade-up" data-aos-delay="100">
+                    <h1 class="my-auto fw-bold fs-custom-title me-0 me-md-4 text-center text-md-start"><span class="fcc-5">WEBSITE</span> PERANGKAT <span class="fcc-5">DAERAH</span></h1>
+                    <img src="/asset/panah-color5.png" class="img-fluid flip-horizontal flip-horizontal-md" style="width: 20vw;">
+                </section>
+                <section class="d-flex gap-3 flex-wrap" id="websitePerangkatDaerah"></section>
+            </article>
+        </main>
+        <!-- sampai sini -->
 
+        <div id="scroll-top-placeholder"></div>
+
+        <footer id="footer-placeholder"></footer>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.16.0/prism.min.js" data-manual></script>
         <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
         <script src="https://cdn.jsdelivr.net/gh/xcash/bootstrap-autocomplete@v2.3.7/dist/latest/bootstrap-autocomplete.min.js"></script>
-        <script type="module" src="js/app.js"></script>
+        <script type="module" src="/js/app.js"></script>
+
+        <!-- bisa tambah script baru mulai dari sini -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+        <script type="module" src="/js/beranda.js"></script>
+        <script type="module" src="/js/aos.js"></script>
     </body>
 </html>

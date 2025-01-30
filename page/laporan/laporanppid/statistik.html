@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>PPID Surakarta</title>
+        <link rel="shortcut icon" href="/asset/logo.png" type="image/png">
+        <link rel="stylesheet" href="/css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.16.0/themes/prism.min.css">
+
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+        <link rel="stylesheet" href="/css/beranda.css">
+        <link rel="stylesheet" href="/css/laporan.css">
+    </head>
+    <body>
+        <nav id="navbar-placeholder" class="menucustom-5"></nav>
+        <div id="search-modal-placeholder"></div>
+        
+        <!-- Edit konten mulai dari sini -->
+        <header></header>
+
+<body>
+    <header class="bg-light py-3">
+       <!-- Laporan PPID Section -->
+       <section id="statistik" class="statistik section">
+        <div class="container section-title" data-aos="fade-up">
+            <h2 class="fs-1">STATISTIK LAYANAN INFORMASI PUBLIK</h2>
+            <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+        </div><!-- End Section Title -->
+    </header>
+
+    <main class="container mt-4">
+        <!-- Statistik Jumlah -->
+        <div class="row text-center mb-4">
+            <div class="col">
+                <div class="stat-box">
+                    <h2 class="stat-number">330</h2>
+                    <p>Daftar Informasi Publik</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="stat-box">
+                    <h2 class="stat-number">330</h2>
+                    <p>jumlah Unduh</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="stat-box">
+                    <h2 class="stat-number">330</h2>
+                    <p>Jumlah Permohonan</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="stat-box">
+                    <h2 class="stat-number">330</h2>
+                    <p>Jumlah Keberatan</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="stat-box">
+                    <h2 class="stat-number">330</h2>
+                    <p>Permohonan Selesai</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Grafik -->
+        <div class="row">
+            <p>Rata-Rata Penyelesaian Permohonan</p>
+            <div class="col-md-6">
+                <canvas id="barChart"></canvas>
+            </div>
+            <div class="col-md-6">
+                <canvas id="lineChart"></canvas>
+            </div>
+        </div>
+
+        <!-- Pie Charts -->
+        <div class="row mt-5">
+            <div class="col-md-4">
+                <h6>Presentase Permohonan Selesai</h6>
+                <canvas id="pieChart1"></canvas>
+            </div>
+            <div class="col-md-4">
+                <h6>Informasi Publik Berdasarkan Kategori.</h6>
+                <canvas id="pieChart2"></canvas>
+            </div>
+            <div class="col-md-4">
+                <h6>Alasan Permohonan Kebaratan</h6>
+                <canvas id="pieChart3"></canvas>
+            </div>
+        </div>
+
+
+        
+        <div class="container mt-4">
+            <div class="page-header bg-overlay">
+                <!-- <h1 class="text-center page-title" id="page-title">Daftar Perangkat Daerah</h1> -->
+            </div>
+            <div class="mt-4">
+                <table id="perangkat-daerah-table" class="table table-striped table-bordered table-responsive">
+                    <thead>
+                        <tr>
+                            <th>No</th>
+                            <th>PPID OPD/UKPD</th>
+                            <th>DIP Publish</th>
+                            <th>Laporan Layanan Informasi Publik</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Data akan diisi secara dinamis oleh JS -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+
+         <!-- Alasan section Section -->
+       <section id="Penolakan" class="Penolakan section">
+        <div class="container section-title" data-aos="fade-up">
+            <h2>Alasan Penolakan Permohonan Publik</h2>
+            <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+        </div><!-- End Section Title -->
+        
+        <div class="container mt-4">
+            <div class="page-header bg-overlay">
+                <!-- <h1 class="text-center page-title" id="page-title">Alasan Penolakan Permohanan Publik</h1> -->
+            </div>
+            <div class="mt-4">
+                <table id="info-table" class="table table-striped table-bordered table-responsive">
+                    <thead>
+                        <tr>
+                            <th>No</th>
+                            <th>Nama Pemohon</th>
+                            <th>Alasan Penolakan</th>
+                            <th>Tanggal</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </div>
+
+         <!-- Alasan Keberatan PPID Section -->
+       <section id="Keberatan" class="Keberatan">
+        <div class="container section-title" data-aos="fade-up">
+            <h2>Alasan Keberayan Informasi Publik</h2>
+            <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+        </div><!-- End Section Title -->
+        
+        <div class="container mt-4">
+            <div class="page-header bg-overlay">
+                <!-- <h1 class="text-center page-title" id="page-title">Alasan Keberatan Informasi Publik</h1> -->
+            </div>
+            <div class="mt-4">
+                <table id="alasan-keberatan-table" class="table table-striped table-bordered table-responsive">
+                    <thead>
+                        <tr>
+                            <th>No</th>
+                            <th>Nomor Reg Keberatan</th>
+                            <th>Kode Permohonan</th>
+                            <th>Catatan</th>
+                            <th>Tanggal</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Data akan diisi secara dinamis oleh JS -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        
+    </main>
+
+    
+        <!-- Sampai sini -->
+        <div id="scroll-top-placeholder"></div>
+
+        <footer id="footer-placeholder"></footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.16.0/prism.min.js" data-manual></script>
+        <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/gh/xcash/bootstrap-autocomplete@v2.3.7/dist/latest/bootstrap-autocomplete.min.js"></script>
+        <script type="module" src="/js/app.js"></script>
+
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+        <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+        <script src="https://cdn.datatables.net/1.13.6/js/dataTables.bootstrap5.min.js"></script>
+        
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+        <script type="module" src="/js/beranda.js"></script>
+        <script type="module" src="/js/aos.js"></script>
+        <script type="module" src="/js/laporan.js"></script>
+        <script src="scripts.js"></script>
+        <script src="/js/statistik.js"></script>
+    </body>
+</html>
+
+
+</body>
+</html>

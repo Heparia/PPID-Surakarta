@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>PPID Surakarta</title>
+        <link rel="shortcut icon" href="/asset/logo.png" type="image/png"> 
+        <link rel="stylesheet" href="/css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.16.0/themes/prism.min.css">
+
+        <!-- bisa tambah stylesheet baru disini -->
+
+    </head>
+    <body class="bg-batik-color4-op20">
+        <nav id="navbar-placeholder" class="menucustom-6"></nav>
+        <div id="search-modal-placeholder"></div>
+        
+        <!-- edit konten mulai dari disini -->
+        <main class="container">
+            <section class="my-5">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                      <li class="breadcrumb-item"><a href="#" class="fcc-5" id="jenis-berita-breadcrumb">Berita Kota Surakarta</a></li>
+                      <li class="breadcrumb-item active" aria-current="page" id="judul-berita-breadcrumb">Library</li>
+                    </ol>
+                  </nav>
+            </section>
+            <section class="row mb-5">
+                <div class="col-12 col-md-4">
+                    <div class="ratio ratio-4x3 mb-3" style="border-radius: 10px; overflow: hidden;">
+                        <img id="gambar-berita" src="#" 
+                            class="w-100 h-100" 
+                            style="object-fit: cover;">
+                    </div>
+                    <h2 id="judul-berita" class="mb-3">Judul</h2>
+                    <div class="d-flex align-items-center fcc-1 gap-1 my-2">
+                        <span class="material-symbols-outlined">calendar_month</span>
+                        <p class="fcc-2 fst-italic m-0" id="tanggal-berita">Tanggal</p>
+                    </div>
+                    <div class="d-flex align-items-center fcc-1 gap-1 my-2">
+                        <span class="material-symbols-outlined">person_edit</span>
+                        <p class="fcc-2 fst-italic m-0" id="penulis-berita">Penulis</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-8 mt-3 mt-md-0">
+                    <div id="deskripsi-berita" style="text-align: justify;"></div>
+                </div>
+            </section>
+        </main>
+        <!-- sampai sini -->
+
+        <div id="scroll-top-placeholder"></div>
+
+        <footer id="footer-placeholder"></footer>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.16.0/prism.min.js" data-manual></script>
+        <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/gh/xcash/bootstrap-autocomplete@v2.3.7/dist/latest/bootstrap-autocomplete.min.js"></script>
+        <script type="module" src="/js/app.js"></script>
+
+        <!-- bisa tambah script baru mulai dari sini -->
+         <script type="module" src="/js/detail-berita.js"></script>
+
+    </body>
+</html>

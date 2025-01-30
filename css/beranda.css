@@ -1,0 +1,165 @@
+/* beranda */
+.carousel-inner img {
+    height: 70vh;
+}
+.fs-custom-title {
+    font-size: clamp(1.5rem, 4.5vw, 6rem);
+}
+.carousel-inner .container .row p{
+    font-size: clamp(0.5rem, 1vw, 3rem);
+}
+.hiasan-1 {
+    height: 15vh;
+}
+.hover-custom-1 a,
+.hover-custom-2,
+.link-item {
+    transition: transform 0.3s ease;
+}
+.hover-custom-1 a:hover,
+.hover-custom-2:hover,
+.link-item:hover {
+    transform: scale(1.08); 
+    border: 2px solid white;
+}
+/* form permohonan */
+.form-control:focus {
+    box-shadow: 0 0 0 .25rem var(--color2);
+}
+.fs-custom-title-icon {
+    font-size: clamp(4rem, 6.5vw, 6.5rem);
+}
+.btn.bgc-1,
+.btn.bgc-3 {
+    transition: transform 0.3s ease;
+}
+.btn.bgc-1:hover {
+    transform: scale(1.08); 
+    background-color: var(--color1);
+}
+.btn.bgc-3:hover {
+    transform: scale(1.08); 
+    background-color: var(--color3);
+}
+/* form keberatan */
+.form-check-input:checked {
+    background-color: var(--color1);
+    border-color: var(--color1);
+}
+.form-check-input:focus {
+    box-shadow: 0 0 0 .25rem var(--color2);
+}
+.bg-cek-status {
+    background: url(/asset/bg-cek-status.png);
+}
+.h-90 {
+    height: 90%;
+}
+.vh-90 {
+    height: 90vh;
+}
+.header-custom-card .rounded-circle {
+    width: 2vw;
+    height: 2vw;
+}
+.rounded-custom {
+    border-radius: 1rem;
+}
+.flip-horizontal-md {
+    transform: scaleX(-1);
+}
+.flip-horizontal-2 {
+    transform: scaleX(1);
+}
+.title-custom-panah .fs-custom-title{
+    font-size: clamp(2rem, 3vw, 6rem);
+}
+
+@media (min-width: 768px) { 
+    .vh-md-90 {
+        height: 90vh;
+    }
+    .flip-horizontal {
+        transform: scaleX(1);
+    }
+    .flip-horizontal-2-md {
+        transform: scaleX(-1);
+    }
+}
+
+@media (min-width: 1200px) { 
+    .vh-xl-90 {
+        height: 90vh;
+    }
+}
+@media (max-width: 767px) {
+    .col-md-5 {
+        padding: 0 15px; 
+    }
+}
+.link-item {
+    flex: 1 1 calc(25% - 1rem); 
+}
+.link-item:hover{
+    background-color: white;
+}
+.link-item img {
+    width: 5vw;
+    min-width: 100px;
+    max-width: 300px;
+    height: auto;
+}
+@media (max-width: 768px) {
+    .link-item {
+        flex: 1 1 calc(50% - 1rem); 
+    }
+}
+
+@media (max-width: 576px) {
+    .link-item {
+        flex: 1 1 100%; 
+    }
+}
+.carousel-item .col-md-4 img{
+    object-fit: contain; 
+    width: 100%; 
+    height: auto;
+}
+.card-deck-wrapper {
+    overflow-x: auto;
+    display: flex;
+    gap: 10px;
+
+    scrollbar-width: none; 
+    -ms-overflow-style: none; 
+}
+.card-deck-wrapper .card-p {
+    width: 15vw; 
+    min-width: 300px;
+    max-width: 600px;
+    border-radius: 15px;
+}
+
+.card-p img {
+    object-fit: contain;
+    width: 100px;
+    height: auto;
+}
+
+.card .card-title {
+    display: -webkit-box;  
+    -webkit-box-orient: vertical; 
+    overflow: hidden;          
+    text-overflow: ellipsis;    
+    -webkit-line-clamp: 2;  
+    line-clamp: 2;
+}
+
+.card .card-text {
+    display: -webkit-box;  
+    -webkit-box-orient: vertical; 
+    overflow: hidden;          
+    text-overflow: ellipsis;    
+    -webkit-line-clamp: 4;  
+    line-clamp: 4;
+}

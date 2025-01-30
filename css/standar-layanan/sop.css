@@ -1,0 +1,147 @@
+body {
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+body::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('/asset/bg-batik-blue.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.15;
+  z-index: -1;
+}
+
+header {
+    text-align: center;
+}
+
+header h1 {
+    padding-top: 2rem;
+    font-weight: bold;
+    color: var(--color1);
+    line-height: 1.5;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  a.card-sop {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color1);
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  a.card-sop:hover {
+    transform: scale(0.9);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .row-sop {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+  }
+  
+  .row-sop:last-child {
+    justify-content: space-around; 
+  }
+  
+  a.card-sop img {
+    border-radius: 0;
+    width: 80px;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  a.card-sop p {
+    font-size: 14px;
+    color: white;
+    margin: 0;
+    padding: 10px;
+  }
+
+  @media (max-width: 768px) {
+    header h1 {
+      font-size: 1.8rem;
+      padding-top: 1.5rem;
+    }
+  
+    main {
+      flex-direction: column;
+      align-items: center;
+      padding: 10px;
+    }
+  
+    a.card-sop {
+      width: 170px;
+      height: 170px;
+      margin-bottom: 20px;
+    }
+  
+    a.card-sop img {
+      width: 50px;
+    }
+  
+    a.card-sop p {
+      font-size: 11px;
+    }
+  
+    .row-sop {
+      flex-direction: column;
+      gap: 20px;
+    }
+  }
+  
+  @media (min-width: 768px) and (max-width: 1024px) {
+    header h1 {
+      font-size: 2rem;
+      padding-top: 2rem;
+    }
+  
+    main {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      padding: 15px;
+    }
+  
+    a.card-sop {
+      width: 180px;
+      height: 180px;
+    }
+  
+    a.card-sop img {
+      width: 60px;
+    }
+  
+    a.card-sop p {
+      font-size: 13px;
+    }
+  
+    .row-sop {
+      gap: 30px;
+    }
+  }

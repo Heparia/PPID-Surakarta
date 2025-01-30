@@ -1,0 +1,37 @@
+.item-berita-body h5 {
+    display: -webkit-box;  
+    -webkit-box-orient: vertical; 
+    overflow: hidden;          
+    text-overflow: ellipsis;    
+    -webkit-line-clamp: 2;  
+    line-clamp: 2;
+}
+
+.item-berita-body .deskripsi {
+    display: -webkit-box;  
+    -webkit-box-orient: vertical; 
+    overflow: hidden;          
+    text-overflow: ellipsis;    
+    -webkit-line-clamp: 3;  
+    line-clamp: 3;
+}
+/* breakpoint medium (md) */
+@media (min-width: 768px) { 
+    .item-berita-body .deskripsi { 
+        -webkit-line-clamp: 5;  
+        line-clamp: 5;
+    }
+}
+/* breakpoint extra large (xl) */
+@media (min-width: 992px) { 
+    .item-berita-body .deskripsi {
+        -webkit-line-clamp: 4;  
+        line-clamp: 4;
+    }
+}
+
+@media (max-width: 576px) {
+    #form-select-month {
+        width: 100%;
+    }
+}

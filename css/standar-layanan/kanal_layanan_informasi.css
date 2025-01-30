@@ -1,0 +1,255 @@
+main{
+    height: auto;
+    position: relative;
+}
+header h1{
+    font-weight: bold;
+    color: var(--color2);
+    padding: 10px 20px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.container-kanal {
+    display: flex;
+    padding: 20px;
+    gap: 100px;
+    padding-left: 250px;
+    padding-right: 150px;
+}
+.batik-decor {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100%;
+    background: url('/asset/bg-batik-blue.png') no-repeat;
+    background-size: cover;
+}
+
+.left-section-kanal {
+    flex: 1;
+}
+.left-section-kanal img {
+    width: 120%;
+    max-width: 400px;
+    height: auto;
+}
+
+.right-section-kanal {
+    flex: 2;
+    padding: 20px;
+}
+h4 {
+    font-size: 1.2rem;
+    color: var(--color2);
+    font-weight: bold;
+}
+h2 {
+    font-size: 2.3rem;
+    color: #333;
+    font-weight: bold;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.contact-kanal {
+    margin-top: 20px;
+}
+
+.contact-kanal p {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+.call-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 500px;
+}
+
+.call-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
+    gap: 10px;
+    padding: 10px 0;
+    background-color: unset;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+.call-item i {
+    font-size: 25px;
+    color: var(--color2);
+}
+
+.call-item-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.call-item-content h4 {
+    font-size: 1rem;
+    font-weight: bold;
+    color: black;
+    margin: 0 0 5px 0;
+}
+
+.call-item-content p {
+    font-size: 0.7rem;
+    color: #555;
+    margin: 0;
+}
+
+.social-kanal .icons-kanal {
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.social-kanal .icons-kanal a {
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color2);
+    border-radius: 50%;
+    transition: color 0.3s, background-color 0.3s;
+    margin-right: 0;
+}
+
+.social-kanal .icons-kanal a:hover {
+    color: var(--color2);
+    background-color: var(--color4);
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    main{
+        height: auto;
+        position: relative;
+    }
+    .container-kanal {
+        padding-left: 80px;
+        padding-right: 50px;
+    }
+    .batik-decor {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 60px;
+        height: 100%;
+        background: url('/asset/bg-batik-blue.png') no-repeat;
+        background-size: cover;
+    }
+    .left-section-kanal img {
+        padding-top: 50px;
+        width: 120%;
+        max-width: 300px;
+    }
+
+    .container-kanal {
+        gap: 50px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    h4 {
+        font-size: 1rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+
+    .call-container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .call-item i {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    main{
+        height: auto;
+        position: relative;
+    }
+    .container-kanal {
+        padding-left: 60px;
+        padding-right: 20px;
+        flex-direction: column;
+    }
+
+    .batik-decor {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 50px;
+        height: 100%;
+        background: url('/asset/bg-batik-blue.png') no-repeat;
+        background-size: cover;
+    }
+    .left-section-kanal img {
+        width: 80%;
+        max-width: none;
+    }
+
+    .call-container {
+        grid-template-columns: 1fr;
+    }
+
+    h1 {
+        font-size: 1.2rem;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    h4 {
+        font-size: 0.9rem;
+    }
+
+    p {
+        font-size: 0.8rem;
+    }
+
+    .call-item i {
+        font-size: 20px;
+    }
+
+    .social-kanal .icons-kanal {
+        margin-top: 10px;
+        display: flex;
+        gap: 10px;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .social-kanal .icons-kanal a {
+        width: 35px;
+        height: 35px;
+        font-size: 18px;
+    }
+}

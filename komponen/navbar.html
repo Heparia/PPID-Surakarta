@@ -6,137 +6,132 @@
     <title>Navbar</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top py-3">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-                <img src="/asset/logo_nama.png" alt="Logo">
+    <header id="header" class="header d-flex align-items-center sticky-top">
+        <div class="container-fluid position-relative d-flex align-items-center justify-content-between">
+            <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+                <img src="/asset/logo_nama.png" alt="">
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav mx-auto">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="/page/beranda/beranda.html">Beranda</a>
-                    </li>            
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Profil
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><span class="dropdown-item-text"><strong>Pemerintah Kota Surakarta</strong></span></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="#">Visi Misi</a></li>
-                            <li><a class="dropdown-item" href="#">Ruang Lingkup</a></li>
-                            <li><a class="dropdown-item" href="#">Organisasi Perangkat Daerah</a></li>
-                            <li><a class="dropdown-item" href="#">Struktur Organisasi</a></li>
-                            <li><a class="dropdown-item" href="#">Tugas dan Fungsi</a></li>
-                            <li><a class="dropdown-item" href="#">Profil Pimpinan</a></li>
-                            <li><a class="dropdown-item" href="#">Daftar Pejabat Struktural</a></li>
-                            <li><a class="dropdown-item" href="#">Satuan dan Unit Kerja</a></li>
-                            <li><hr class="dropdown-divider"></li>
-    
-                            <li><span class="dropdown-item-text"><strong>PPID Pemerintah Kota Surakarta</strong></span></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="#">Profil</a></li>
-                            <li><a class="dropdown-item" href="#">Visi Misi</a></li>
-                            <li><a class="dropdown-item" href="#">Struktur Organisasi</a></li>
-                            <li><a class="dropdown-item" href="#">Tugas dan Fungsi</a></li>
-                            <li><a class="dropdown-item" href="#">Dasar Hukum</a></li>
+            <nav id="navmenu" class="navmenu">
+                <ul>
+                    <li><a href="/page/beranda/beranda.html" class="main-menu">Beranda<br></a></li>
+                    <li class="dropdown"><a href="#" class="main-menu"><span>Profil</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                        <ul>
+                        <li class="dropdown"><a href="#"><span>Pemerintah Kota Surakarta</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                            <ul>
+                                <li><a href="/page/profil/pemerintah/visiMisi.html">Visi Misi</a></li>
+                                <li><a href="/page/profil/pemerintah/ruangLingkup.html">Ruang Lingkup</a></li>
+                                <li><a href="/page/profil/pemerintah/organisasiPerangkatDaerah.html">Organisasi Perangkat Daerah</a></li>
+                                <li><a href="/page/profil/pemerintah/StrukturOrganisasi.html">Struktur Organisasi</a></li>
+                                <li><a href="/page/profil/pemerintah/tugasFungsi.html">Tugas dan Fungsi</a></li>
+                                <li><a href="/page/profil/pemerintah/daftarPerangkatDaerah.html">Daftar Perangkat Daerah</a></li>
+                                <li><a href="/page/profil/pemerintah/daftarKecamatan.html">Daftar Kecamatan</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown"><a href="#"><span>PPID Pemerintah Surakarta</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                            <ul>
+                                <li><a href="/page/profil/ppid/profil.html">Profil</a></li>
+                                <li><a href="/page/profil/ppid/visi-misi.html">Visi Misi</a></li>
+                                <li><a href="/page/profil/ppid/struktur-Organisasi.html">Struktur Organisasi</a></li>
+                                <li><a href="/page/profil/ppid/tugas-Fungsi.html">Tugas dan Fungsi</a></li>
+                                <li><a href="/page/profil/ppid/dasarHukum.html">Dasar Hukum</a></li>
+                            </ul>
+                        </li>
                         </ul>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Informasi Publik
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Daftar Informasi Publik PPID Kota</a></li>
-                            <li><a class="dropdown-item" href="#">Daftar Informasi Publik PPID Perangkat Daerah</a></li>
-                            <li><a class="dropdown-item" href="#">Dokumen Informasi Publik</a></li>
-                            <li><a class="dropdown-item" href="#">Informasi Berkala</a></li>
-                            <li><a class="dropdown-item" href="#">Informasi Serta Merta</a></li>
-                            <li><a class="dropdown-item" href="#">Informasi Setiap Saat</a></li>
-                            <li><a class="dropdown-item" href="#">Informasi Di Kecualikan</a></li>
+                    <li class="dropdown"><a href="#" class="main-menu"><span>Informasi Publik</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                        <ul>
+                            <li><a href="/page/informasi-publik/daftar_ppid_kota.html">Daftar Informasi Publik PPID Kota</a></li>
+                            <li><a href="/page/informasi-publik/daftar_ppid_daerah.html">Daftar Informasi Publik PPID Perangkat Daerah</a></li>
+                            <li><a href="/page/informasi-publik/dokumen_informasi_publik.html">Dokumen Informasi Publik</a></li>
+                            <li><a href="/page/informasi-publik/informasi_berkala.html">Informasi Berkala</a></li>
+                            <li><a href="/page/informasi-publik/informasi_serta_merta.html">Informasi Serta Merta</a></li>
+                            <li><a href="/page/informasi-publik/informasi_setiap_saat.html">Informasi Setiap Saat</a></li>
+                            <li><a href="/page/informasi-publik/informasi_dikecualikan.html">Informasi Di Kecualikan</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Standar Layanan
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Prosedur Pelayanan Informasi Publik</a></li>
-                            <li><a class="dropdown-item" href="#">Prosedur Pengelolaan Keberatan Informasi Publik</a></li>
-                            <li><a class="dropdown-item" href="#">Prosedur Permohonan Penyelesaian Sengketa Informasi</a></li>
-                            <li><a class="dropdown-item" href="#">Prosedur Penanganan Sengketa Informasi</a></li>
-                            <li><a class="dropdown-item" href="#">SOP PPID</a></li>
-                            <li><a class="dropdown-item" href="#">Kanal Layanan Informasi</a></li>
-                            <li><a class="dropdown-item" href="#">Waktu & Biaya Layanan</a></li>
-                            <li><a class="dropdown-item" href="#">Maklumat Informasi Publik</a></li>
-                            <li><a class="dropdown-item" href="#">Libur Nasional Dan Cuti Bersama</a></li>
+                    <li class="listing-dropdown"><a href="#" class="main-menu"><span>Standar Layanan</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                        <ul>
+                            <li>
+                                <a href="/page/standar-layanan/prosedur_pelayanan_informasi_publik.html">Prosedur Pelayanan Informasi Publik</a>
+                                <a href="/page/standar-layanan/prosedur_pengajuan_keberatan_informasi_publik.html">Prosedur Pengelolaan Keberatan Informasi Publik</a>
+                                <a href="/page/standar-layanan/prosedur_permohonan_penyelesaian_sengketa_informasi.html">Prosedur Permohonan Penyelesaian Sengketa Informasi</a>       
+                            </li>
+                            <li>
+                                <a href="/page/standar-layanan/prosedur_penanganan_sengketa.html">Prosedur Penanganan Sengketa Informasi</a>
+                                <a href="/page/standar-layanan/sop.html">SOP PPID</a>
+                                <a href="/page/standar-layanan/kanal_layanan_informasi.html">Kanal Layanan Informasi</a>
+                            </li>
+                            <li>
+                                <a href="/page/standar-layanan/waktu_dan_biaya.html">Waktu & Biaya Layanan</a>
+                                <a href="/page/standar-layanan/maklumat_informasi_publik.html">Maklumat Informasi Publik</a>
+                                <a href="/page/standar-layanan/kalender.html">Libur Nasional Dan Cuti Bersama</a>
+                            </li>
                         </ul>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Laporan
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><span class="dropdown-item-text"><strong>Pemerintah Kota Surakarta</strong></span></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="#">Laporan Keuangan Pemerintah Daerah (LKPD)</a></li>
-                            <li><a class="dropdown-item" href="#">Laporan Kinerja Instansi Pemerintah (LKIP)</a></li>
-                            <li><a class="dropdown-item" href="#">Laporan Penyelenggaraan Pemerintahan Daerah (LPPD)</a></li>
-                            <li><hr class="dropdown-divider"></li>
-    
-                            <li><span class="dropdown-item-text"><strong>PPID Pemerintah Kota Surakarta</strong></span></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="#">Laporan PPID</a></li>
-                            <li><a class="dropdown-item" href="#">Statistik Layanan Informasi Publik</a></li>
-                            <li><a class="dropdown-item" href="#">Survei Layanan PPID</a></li>
+                    <li class="dropdown"><a href="#" class="main-menu"><span>Laporan</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                        <ul>
+                            <li><a href="/page/laporan/laporanPemerintah.html">Pemerintah Kota Surakarta<br></a></li>
+                            
+                            <li class="dropdown"><a href="#"><span>PPID Pemerintah Surakarta</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                                <ul>
+                                    <li><a href="/page/laporan/laporanppid/laporanPPID.html">Laporan PPID</a></li>
+                                    <li><a href="/page/laporan/laporanppid/statistik.html">Statistik Layanan Informasi Publik</a></li>
+                                    <li><a href="/page/laporan/laporanppid/surveiLayanan.html">Survei Layanan PPID</a></li>
+                                </ul>
+                            </li>
                         </ul>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/page/berita/berita.html">Berita</a>
+                    <li class="dropdown"><a href="#" class="main-menu"><span>Berita</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                        <ul>
+                            <li><a href="/page/berita/berita-surakarta.html">Berita Kota Surakarta</a></li>
+                            <li><a href="/page/berita/berita-transparansi.html">Berita Transparansi</a></li>
+                        </ul>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Galeri</a>
+                    <li class="dropdown"><a href="#" class="main-menu"><span>Galeri</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                        <ul>
+                            <li><a href="/page/galeri/gambar.html">Gambar</a></li>
+                            <li><a href="/page/galeri/video.html">Video</a></li>
+                        </ul>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Kontak
-                        </a>
-                        <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">FAQ</a></li>
-                        <li><a class="dropdown-item" href="#">Kontak</a></li>
+                    <li class="dropdown"><a href="#" class="main-menu"><span>Kontak</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                        <ul>
+                            <li><a href="/page/kontak/faq.html">FAQ</a></li>
+                            <li><a href="/page/kontak/kontak.html">Kontak</a></li>
                         </ul>
                     </li>
                 </ul>
-                <form class="d-flex">
-                    <div class="form-group w-auto">
-                        <div class="input-group">
-                            <input class="form-control" type="search" list="options" id="input-datalist" placeholder="Cari..." aria-label="Search">
-                            <button class="btn" type="submit"><span class="material-symbols-outlined">search</span></button>
-                        </div>
-                        <datalist id="options">
-                            <option>Beranda</option>
-                            <option>Profil</option>
-                            <option>Informasi Publik</option>
-                            <option>Standar Layanan</option>
-                            <option>Laporan</option>
-                            <option>Berita</option>
-                            <option>Galeri</option>
-                            <option>Kontak</option>
-                        </datalist>                        
-                    </div>
-                    <script>
-                        document.addEventListener('DOMContentLoaded', e => {
-                            document.getElementById('input-datalist').autocomplete()
-                        }, false);
-                    </script>
-                </form>
                 
-            </div>
+                <i class="mobile-search-toggle d-sm-none bi bi-search fs-4 m-auto me-2" data-bs-toggle="modal" data-bs-target="#search-modal"></i>
+                <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+            </nav>
+
+            <form class="d-flex btn-getstarted d-none d-sm-block">
+                <div class="form-group w-auto">
+                    <div class="input-group">
+                        <input class="form-control" type="search" list="options" id="input-datalist" placeholder="Cari..." aria-label="Search">
+                        <button class="btn" type="submit"><span class="material-symbols-outlined">search</span></button>
+                    </div>
+                    <datalist id="options">
+                        <option>Beranda</option>
+                        <option>Profil</option>
+                        <option>Informasi Publik</option>
+                        <option>Standar Layanan</option>
+                        <option>Laporan</option>
+                        <option>Berita</option>
+                        <option>Galeri</option>
+                        <option>Kontak</option>
+                    </datalist>                        
+                </div>
+                <script>
+                    document.addEventListener('DOMContentLoaded', e => {
+                        document.getElementById('input-datalist').autocomplete()
+                    }, false);
+                </script>
+            </form>
         </div>
-    </nav>
+        
+    </header>
+    
     
 </body>
 </html>

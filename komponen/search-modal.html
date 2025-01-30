@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Modal</title>
+</head>
+<body>
+    <div class="modal fade" id="search-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Searching</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form class="d-flex btn-getstarted">
+                    <div class="form-group w-100">
+                        <div class="input-group">
+                            <input class="form-control" type="search" list="options" id="input-datalist" placeholder="Cari..." aria-label="Search">
+                            <button class="btn" type="submit"><span class="material-symbols-outlined">search</span></button>
+                        </div>
+                        <datalist id="options">
+                            <option>Beranda</option>
+                            <option>Profil</option>
+                            <option>Informasi Publik</option>
+                            <option>Standar Layanan</option>
+                            <option>Laporan</option>
+                            <option>Berita</option>
+                            <option>Galeri</option>
+                            <option>Kontak</option>
+                        </datalist>                        
+                    </div>
+                    <script>
+                        document.addEventListener('DOMContentLoaded', e => {
+                            document.getElementById('input-datalist').autocomplete()
+                        }, false);
+                    </script>
+                </form>
+            </div>
+          </div>
+        </div>
+    </div>
+</body>
+</html>

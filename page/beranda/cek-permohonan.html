@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>PPID Surakarta</title>
+        <link rel="shortcut icon" href="/asset/logo.png" type="image/png"> 
+        <link rel="stylesheet" href="/css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.16.0/themes/prism.min.css">
+
+        <!-- bisa tambah stylesheet baru disini -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+        <link rel="stylesheet" href="/css/beranda.css">
+    </head>
+    <body>
+        <nav id="navbar-placeholder" class="menucustom-1"></nav>
+        <div id="search-modal-placeholder"></div>
+        
+        <!-- edit konten mulai dari disini -->
+
+        <main>
+            <div class="container-fluid d-inline-block bbc-4">
+                <div class="row">
+                    <div class="col-12 col-xl-7 d-flex flex-column p-5 bg-cek-status justify-content-end vh-50 vh-xl-90 m-auto m-xl-0" data-aos="fade-right" data-aos-delay="100">
+                        <p><span class="material-symbols-outlined fcc-1 fs-custom-title-icon justify-content-center justify-content-xl-start">quick_reference_all</span></p>
+                        <p class="fs-1 fw-bold ms-2 text-center text-xl-start fcc-1"><span class="fcc-5">CEK</span> STATUS<br>PERMOHONAN INFORMASI <span class="fcc-5">PUBLIK</span>.</p>
+                    </div>
+                    <div class="col-12 col-xl-5 bgc-1 d-flex justify-content-center align-items-center py-5 py-xl-0" data-aos="fade-left" data-aos-delay="100">
+                        <form action="#" method="POST" class="text-white bgc-1 col-8 my-5 my-md-0" id="cek-status">
+                            <div class="mb-3">
+                                <label for="nik" class="form-label">NIK/No Identitas</label>
+                                <input type="text" class="form-control border-2 border-primary rounded-5" id="nik" required>
+                            </div>
+                            <div class="mb-4">
+                                <label for="kode" class="form-label">Kode Permohonan</label>
+                                <input type="text" class="form-control border-2 border-primary rounded-5" id="kode" required>
+                            </div>
+                            <button type="submit" class="btn bgc-3 rounded-5 border-none text-white w-100 mb-4">Cek Status</button>
+                            <a href="/page/beranda/form-permohonan.html" class="text-white text-center fst-italic d-block">Buat Permohonan</a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <!-- sampai sini -->
+
+        <div id="scroll-top-placeholder"></div>
+
+        <footer id="footer-placeholder"></footer>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.16.0/prism.min.js" data-manual></script>
+        <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/gh/xcash/bootstrap-autocomplete@v2.3.7/dist/latest/bootstrap-autocomplete.min.js"></script>
+        <script type="module" src="/js/app.js"></script>
+
+        <!-- bisa tambah script baru mulai dari sini -->
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+        <script type="module" src="/js/aos.js"></script>
+        <script type="module" src="/js/cek-status.js"></script>
+    </body>
+</html>

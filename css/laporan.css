@@ -1,0 +1,441 @@
+/* import */
+@import url('https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+@import url('/css/main.css');
+
+/* root */
+:root {
+    /* hijau tua  */
+    --color1: #19304b;
+    /* hijau muda */
+    --color2: #234265;
+    /* abu tua */
+    --color3: #585858;
+    /* abu muda */
+    --color4: #d2d2d2;
+    /* kuning tua */
+    --color5: #efd096;
+    /* kuning muda */
+    --color6: #f9c22e;
+
+    /* Menimpa warna di Bootstrap 5 */
+    --bs-primary: var(--color1) !important;
+    --bs-secondary: var(--color3) !important;
+    --bs-success: var(--color1) !important;
+    --bs-danger: var(--color3) !important;
+    --bs-warning: var(--color5) !important;
+    --bs-info: var(--color2) !important;
+    --bs-light: var(--color4) !important;
+    --bs-dark: var(--color3) !important;
+    --bs-border-radius: 3rem;
+    --bs-primary-rgb: 25, 48, 75;
+    --bs-border-color: var(--color1);
+}
+
+
+/* Smooth scroll */
+:root {
+  scroll-behavior: smooth;
+}
+/*--------------------------------------------------------------
+# Global Sections
+--------------------------------------------------------------*/
+section,
+.section {
+  color: var(--default-color);
+  background-color: var(--background-color);
+  padding: 60px 0;
+  scroll-margin-top: 112px;
+  overflow: clip;
+}
+
+@media (max-width: 1199px) {
+
+  section,
+  .section {
+    scroll-margin-top: 100px;
+  }
+}
+
+/*--------------------------------------------------------------
+# Global Section Titles
+--------------------------------------------------------------*/
+.section-title {
+  text-align: center;
+  padding-bottom: 30px;
+  position: relative;
+}
+
+.section-title h2 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  color: var(--color1);
+}
+
+.section-title h2:after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: var(--accent-color);
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.section-title p {
+  margin-bottom: 0;
+}/* Global styling for body */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Sections styling */
+section, .section {
+    color: var(--default-color);
+    background-color: var(--background-color);
+    padding: 60px 0;
+    scroll-margin-top: 112px;
+    overflow: clip;
+}
+
+@media (max-width: 1199px) {
+    section, .section {
+        scroll-margin-top: 100px;
+    }
+}
+
+/* Section Titles */
+.section-title {
+    text-align: center;
+    padding-bottom: 30px;
+    position: relative;
+}
+
+.section-title h2 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    color: var(--color1);
+}
+
+.section-title h2:after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 3px;
+    background: var(--accent-color);
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.section-title p {
+    margin-bottom: 0;
+}
+
+
+/* Container and Slider adjustments */
+.slider {
+    display: flex;
+    overflow-x: auto;
+    gap: 16px;
+    padding: 20px;
+    scroll-behavior: smooth;
+}
+
+.slider::-webkit-scrollbar {
+    height: 8px;
+}
+.slider::-webkit-scrollbar-thumb {
+    background-color: var(--color1);
+    border-radius: 4px;
+}
+.slider::-webkit-scrollbar-track {
+    background-color: #f4f4f4;
+}
+
+
+/*--------------------------------------------------------------
+# laporan pemerintah Sections
+--------------------------------------------------------------*/
+
+/* Item dalam slider pada section pemerintah */
+.item {
+    flex: 0 0 180px; 
+    height: 280px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease; 
+}
+
+.item:hover {
+    transform: scale(1.1); 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); 
+}
+
+
+.item img {
+    width: 100px;
+    height: auto;
+    object-fit: contain;
+    background-color: #ffffff;
+    padding: 1px;
+    border-radius: 4px;
+    margin-bottom: 5px;
+    margin-top: 10px;
+    transition: transform 0.3s ease; 
+}
+
+.item-title {
+    text-align: center;
+    color: var(--color1); 
+    font-size: 14px;
+    font-weight: bold;
+    word-wrap: break-word;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    transition: color 0.3s ease; 
+}
+
+
+.item:hover .item-title {
+    color: var(--color6); 
+}
+
+@media (max-width: 768px) {
+    .item {
+        flex: 0 0 140px;
+        height: 200px;
+    }
+    .slider {
+        gap: 12px;
+    }
+    .item img {
+        width: 80px;
+    }
+}
+
+
+/* Laporan PPID Section */
+.laporan-ppid {
+    padding: 60px 0;
+}
+
+.laporan-ppid .section-title h2 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.laporan-ppid .section-title p {
+    text-align: center;
+    color: #555;
+}
+
+
+.laporan-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.laporan-item {
+    width: 48%;
+    max-width: 300px;
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+    position: relative;
+    z-index: 0; 
+}
+
+.laporan-item:hover {
+    transform: translateY(-10px);
+}
+
+.laporan-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.item-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #19304b;
+    margin-top: 10px;
+    position: relative;
+    z-index: 1; 
+}
+
+/* Responsiveness */
+@media screen and (max-width: 768px) {
+    .laporan-item {
+        width: 100%; 
+    }
+}
+
+/*--------------------------------------------------------------
+# Tabel Statistik Section
+--------------------------------------------------------------*/
+
+#page-title {
+    color: var(--color2);
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 100px;
+    padding: 10px 0;
+    background-color: transparent;
+}
+
+
+section {
+    padding: 50px 0; 
+    margin-bottom: 50px; 
+}
+
+/* Responsivitas untuk DataTable */
+@media (max-width: 768px) {
+    .dataTables_wrapper .row {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .dataTables_wrapper .dataTables_length,
+    .dataTables_wrapper .dataTables_filter,
+    .dataTables_wrapper .dataTables_info,
+    .dataTables_wrapper .dataTables_paginate {
+        text-align: left;
+        width: 100%;
+    }
+
+    .dataTables_wrapper .dataTables_length {
+        margin-bottom: 10px;
+    }
+
+    table.dataTable {
+        text-align: left;
+        width: 100%;
+    }
+}
+
+table {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-collapse: separate;
+    border-spacing: 0;
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+table thead {
+    background-color: var(--color2);
+    color: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+table th, table td {
+    padding: 12px 15px;
+    border: 1px solid #d2d2d2;
+    text-align: center;
+    border-radius: 5px;
+}
+
+table tbody tr:hover {
+    background-color: #e1e1e1;
+}
+
+table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+table tbody tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+table th, table td {
+    word-wrap: break-word;
+    min-width: 100px;
+}
+
+#info-table_wrapper .dt-row {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.dataTables_wrapper .dataTables_filter {
+    float: right;
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+.dataTables_wrapper .dataTables_filter label {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.dataTables_wrapper .dataTables_filter input {
+    margin-left: 10px;
+    padding: 5px 10px;
+    font-size: 14px;
+}
+
+.dataTables_length {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.dataTables_paginate {
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 576px) {
+    table th, table td {
+        padding: 8px;
+        font-size: 12px;
+    }
+
+    .dataTables_paginate {
+        margin-top: 10px;
+    }
+
+    .dataTables_length {
+        margin-bottom: 10px;
+    }
+
+    .dataTables_wrapper {
+        overflow-x: auto;
+    }
+}

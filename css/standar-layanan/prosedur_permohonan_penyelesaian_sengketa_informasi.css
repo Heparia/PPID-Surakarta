@@ -1,0 +1,184 @@
+header {
+    text-align: center; 
+    padding-bottom: 1rem; 
+}
+
+header h1 {
+    font-weight: bold; 
+    color: var(--color1);
+    line-height: 1.5; 
+}
+
+.container-fluid {
+    padding: 0;
+}
+
+.row {
+    margin: 0;
+    display: flex;
+}
+
+.content-left,
+.content-right {
+    flex: 1;
+    padding: 2rem;
+    box-sizing: border-box;
+}
+
+.content-right h4 {
+    text-align: end;
+    margin-bottom: 1rem; 
+}
+
+.content-left .content-list, .content-right .content-list {
+    text-align: justify;
+    margin-left: 0; 
+    padding-left: 20px; 
+}
+
+.content-left .content-list li, .content-right .content-list li {
+    margin-bottom: 0.5rem; 
+}
+
+.content-left {
+    position: relative; 
+    background-color: var(--color1);
+    color: white;
+    background-blend-mode: normal;
+    height: auto;
+    z-index: 1; 
+}
+
+.content-left::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('/asset/bg-batik-color4-op20.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.2; 
+    z-index: -1; 
+}
+.content-right {
+    position: relative; 
+    background-color: white;
+    background-blend-mode: normal;
+    height: auto;
+    z-index: 1; 
+}
+
+.content-right::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('/asset/bg-batik-color4.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.8; 
+    z-index: -1; 
+}
+
+.image-content {
+    width: 100px;
+    height: auto;
+}
+
+.bordered-text {
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.bordered-text::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    border-bottom: 2px dashed var(--color4);
+}
+
+.content-list {
+    margin-top: 10px;
+    padding-left: 1.5rem;
+    list-style: decimal;
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.2rem;
+        padding: 15px;
+        text-align: center; 
+    }
+
+    .content-left, .content-right {
+        flex: 100%; 
+        padding: 10px; 
+    }
+
+    .content-left .content-list, .content-right .content-list {
+        text-align: justify;
+        margin-left: 0;
+        padding-left: 15px; 
+    }
+
+    .content-left .content-list li, .content-right .content-list li {
+        font-size: 0.75rem; 
+        margin-bottom: 10px; 
+    }
+
+    .image-content {
+        width: 70px; 
+        height: auto;
+    }
+
+    .content-left h4, .content-right h4 {
+        font-size: 1rem;
+    }
+
+    .content-list {
+        padding-left: 1.5rem; 
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    header h1 {
+        font-size: 2rem;
+        padding: 20px;
+        text-align: center; 
+    }
+
+    .content-left, .content-right {
+        flex: 1;
+        padding: 20px; 
+    }
+
+    .content-left .content-list, .content-right .content-list {
+        text-align: justify;
+        padding-left: 20px; 
+    }
+
+    .content-left .content-list li, .content-right .content-list li {
+        font-size: 0.9rem; 
+    }
+
+    .image-content {
+        width: 90px; 
+        height: auto;
+    }
+
+    .content-left h4, .content-right h4 {
+        font-size: 1.2rem;
+    }
+
+    .content-left, .content-right {
+        flex: 50%; 
+    }
+}

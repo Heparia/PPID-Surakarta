@@ -1,0 +1,292 @@
+main {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    height: 100vh;
+}
+.header-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 10px 0;
+    padding-bottom: 20px;
+}
+.image-calender {
+    width: 100px;
+    height: auto;
+    object-fit: contain;
+}
+.header-text h1 {
+    font-weight: bold; 
+    font-size: 2rem; 
+    color: var(--color1);
+    line-height: 1.5; 
+}
+.event-container {
+    background-color: white;
+    padding: 20px;
+    overflow-y: auto;
+    box-sizing: border-box;
+}
+.event-container h2 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 20px;
+}
+#eventTable {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 10px;
+}
+#eventTable th {
+    background-color: var(--color2);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+#eventTable td {
+    background-color: var(--color4);
+    padding: 20px;
+    border: 1px solid #ddd;
+}
+#eventTable tr:nth-child(odd) td {
+    background-color: whitesmoke;
+}
+#eventTable tr:nth-child(even) td {
+    background-color: var(--color4);
+}
+.calendar-container {
+    position: relative;
+    background-color: var(--color1);
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    z-index: 1; 
+    overflow: hidden;
+}
+.calendar-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('/asset/bg-batik-color4-op20.png');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.3;
+    z-index: -1;
+    pointer-events: none;
+}
+.calendar-header {
+    display: flex;
+    padding: 10px 20px;
+    width: 100%;
+    max-width: 600px;
+    justify-content: flex-end;
+    align-items: center;
+}
+.calendar-header button {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 35px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-left: 10px;
+}
+.calendar-header button:hover {
+    color: var(--color4);
+}
+#monthYear {
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-left: 20px;
+}
+#month {
+    font-size: 1.9rem;
+    color: white;
+}
+#year {
+    font-size: 3rem;
+    color: var(--color5);
+    margin-left: 10px;
+}
+.weekdays {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr); 
+    gap: 5px; 
+    padding: 20px; 
+    width: 100%; 
+    max-width: 600px; 
+    border-radius: 5px;
+}
+.weekdays div {
+    text-align: center;
+    padding: 20px;
+    font-size: 16px;
+    background-color: #597095;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+.weekdays div:hover {
+    background-color: var(--color4);
+    color: black;
+}
+.days div:nth-child(14n-13),
+.days div:nth-child(14n-12),
+.days div:nth-child(14n-11),
+.days div:nth-child(14n-10),
+.days div:nth-child(14n-9),
+.days div:nth-child(14n-8),
+.days div:nth-child(14n-7) {
+    background-color: whitesmoke;
+}
+.days div:nth-child(14n-6),
+.days div:nth-child(14n-5),
+.days div:nth-child(14n-4),
+.days div:nth-child(14n-3),
+.days div:nth-child(14n-2),
+.days div:nth-child(14n-1),
+.days div:nth-child(14n) {
+    background-color: #597095; 
+}
+.days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+    padding: 20px;
+    width: 100%;
+    max-width: 600px;
+    border-radius: 5px;
+}
+.days div {
+    text-align: center;
+    padding: 20px;
+    color: #333;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+.days div:hover {
+    background-color: var(--color1);
+    color: white;
+}
+.days div.today {
+    background-color: #efd096;
+    color: #333;
+}
+.days div.holiday {
+    color: #e84c3d;
+}
+.days div.saturday {
+    color: #e84c3d; 
+}
+.days div.sunday {
+    color: #e84c3d;
+}
+.days div.friday {
+    color: green;
+}
+.days div.empty {
+    background-color: transparent;
+    pointer-events: none;
+}
+@media (max-width: 768px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+    .header-container {
+        flex-direction:row;
+        align-items: center;
+    }
+    .image-calender {
+        width: 70px;
+    }
+    .header-text h1 {
+        font-size: 1.4rem;
+    }
+    .calendar-container, .event-container {
+        width: 100vw;
+    }
+    #month {
+        font-size: 1.5rem;
+    }
+    #year {
+        font-size: 2.5rem;
+    }
+    .calendar-header button {
+        font-size: 20px;
+    }
+    .calendar-container {
+        display: block;
+    }
+    .calendar-header {
+        justify-content: space-between;
+    }
+    .weekdays div, .days div {
+        width: 30px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 14px;
+        text-align: center;
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+    .header-container {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    .image-calender {
+        width: 100px;
+    }
+    .header-text h1 {
+        font-size: 2rem;
+    }
+    .calendar-containe {
+        width: 100%;
+        overflow-x: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .calendar-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .calendar-header {
+        justify-content: space-between;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .weekdays div, .days div {
+        width: 80px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 14px;
+        text-align: center;
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+}
