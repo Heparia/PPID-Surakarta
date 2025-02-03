@@ -51,7 +51,7 @@ $(document).ready(function() {
           const image = item.logo || "/asset/logo.png";
 
           const html = `
-              <a href="${link}" data-aos="fade-up" data-aos-delay="500" class="link-item text-center p-5 rounded-5 text-decoration-none fcc-1 border-primary border border-2">
+              <a href="${link}" data-aos="fade-up" class="link-item text-center p-5 rounded-5 text-decoration-none fcc-1 border-primary border border-2">
                   <img src="${image}" onerror="this.src='/asset/logo.png'" class="img-fluid mb-3">
                   <p class="m-0">${item.nama}</p>
               </a>

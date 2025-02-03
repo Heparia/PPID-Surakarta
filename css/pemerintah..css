@@ -820,6 +820,10 @@ table tbody tr:nth-child(even) {
 .services .service-item:hover .icon img {
   transform: scale(2);
 }
+.services .service-item:hover p {
+  color: var(--color1);
+}
+
 
 .services .service-item:hover .icon:before {
   background: color-mix(in srgb, var(--accent-color), transparent 50%);

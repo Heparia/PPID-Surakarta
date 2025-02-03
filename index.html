@@ -5,28 +5,23 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>PPID Surakarta</title>
         <link rel="shortcut icon" href="asset/logo.png" type="image/png">
-
-        <script>
-            document.addEventListener("DOMContentLoaded", () => {
-                const base = document.createElement("base");
-                const isGitHub = location.hostname.includes("github.io");
-                base.href = isGitHub ? "/PPID-Surakarta/" : "/";
-                document.head.appendChild(base);
-                window.onload = function() {
-                    if (navigator.onLine) {
-                        window.location.href = `${base.href}page/beranda/beranda.html`;
-                    } else {
-                        alert("Koneksi internet tidak stabil.");
-                    }
-                };
-            });
-        </script>
-
         <link rel="stylesheet" href="asset/css/style.css">
-        <script src="asset/js/app.js" defer></script>
     </head>
     <body>
         <h1>Selamat datang di Halaman Utama</h1>
         <p>Memuat halaman...</p>
+
+        <script src="js/global/base.js"></script>
+        <script>
+            document.addEventListener("DOMContentLoaded", () => {
+                const base = document.querySelector("base") || { href: "/" };
+                if (navigator.onLine) {
+                    window.location.assign(`${base.href}page/beranda/beranda.html`);
+                } else {
+                    alert("Koneksi internet tidak stabil.");
+                }
+            });
+        </script>
+        <script src="asset/js/app.js"></script>
     </body>
 </html>
